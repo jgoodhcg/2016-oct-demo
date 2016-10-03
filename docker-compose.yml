@@ -1,0 +1,27 @@
+version: '2'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: docker.nginx
+    image: 2016-oct-demo-nginx
+    container_name: 2016-oct-demo-nginx-container
+    ports:
+      - "8080:8080"
+    volumes:
+      - wwwroot:/wwwroot
+  webpack:
+    build:
+      context: .
+      dockerfile: docker.webpack
+    image: 2016-oct-demo-webpack
+    container_name: 2016-oct-demo-webpack-container
+    ports:
+      - "35729:35729" ## for live reload
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - wwwroot:/wwwroot
+volumes:
+  wwwroot:
+    driver: local
