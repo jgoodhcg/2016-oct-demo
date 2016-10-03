@@ -7,7 +7,7 @@ export default class Layout extends React.Component {
 
     render() {
         return (
-            <div class="test">
+            <div class="card card-1">
                 "CONTENT HERE"
             </div>
         );
