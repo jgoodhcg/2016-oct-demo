@@ -20,7 +20,6 @@ services:
       - "35729:35729" ## for live reload
     volumes:
       - .:/app
-      - /app/node_modules
       - wwwroot:/wwwroot
 volumes:
   wwwroot:

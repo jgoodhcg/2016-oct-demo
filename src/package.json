@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "webpack.config.js",
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^6.2.0",
     "babel-plugin-add-module-exports": "^0.1.2",
@@ -17,6 +17,7 @@
     "html-webpack-plugin": "^2.22.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
+    "react-router": "^2.8.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
