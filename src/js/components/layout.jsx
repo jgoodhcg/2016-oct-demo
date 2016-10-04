@@ -7,12 +7,8 @@ export default class Layout extends React.Component {
 
     render() {
         return (
-            <div >
-                <div class="row">
-                    <div class="col-12 card">
-                        top bar
-                    </div>
-                </div>
+            <div id="top-bar" class="card-5">
+                Justin Good
             </div>
         );
 
