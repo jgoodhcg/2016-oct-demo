@@ -1,9 +1,5 @@
 ###todo
 
- - [ ] materialize-css
-   - [ ] import module
-   - [ ] import dependencies
-   - [ ] set webpack config
  - [ ] favicon
  - [ ] topbar
    - [ ] name/username (fade in and out?)

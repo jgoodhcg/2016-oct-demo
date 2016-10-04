@@ -7,9 +7,14 @@ export default class Layout extends React.Component {
 
     render() {
         return (
-            <div class="card blue-grey darken-1 test">
-                "CONTENT HERE"
+            <div >
+                <div class="row">
+                    <div class="col-12 card">
+                        top bar
+                    </div>
+                </div>
             </div>
         );
+
     }
 }
