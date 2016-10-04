@@ -6,7 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     context: "/app/src",
     devtool: debug ? "inline-sourcemap" : null,
-    entry: "./js/client.js",
+    entry: "./js/client.jsx",
     watchOptions: {
         aggregateTimeout: 300,
         poll: 1000
