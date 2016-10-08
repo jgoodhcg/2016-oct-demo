@@ -1,20 +1,37 @@
 @import './../sass/simple-grid';
 
+/* CSS GROUPING GUIDE (line between each)
+Positioning
+Display & Box Model
+Color
+Text
+Other
+*/
+
 $dark-primary : #455A64;
 $text-icons: #ffffff; 
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
   background: #e2e1e0;
+
   text-align: center;
 }
 
 .card {
-  background: #fff;
-  border-radius: 2px;
+  position: relative;
+
   display: inline-block;
   margin: 1rem;
-  position: relative;
+  border-radius: 2px;
+
+  background: #fff;
 }
 
 .card-1 {
@@ -43,10 +60,36 @@ body {
 }
 
 #top-bar{
+    display: inline-block;
     width: 100%;
-    background-color: $dark-primary;
-    color: $text-icons;
-    font-size: 2em;
-    text-align: left;
     padding-left: 1em;
+    padding-right: 1em;
+
+    background-color: $dark-primary;
+
+    font-size: 2em;
+
+    #name{
+        float: left;
+
+        div{
+            margin: 0.5em;
+
+            color: $text-icons;
+        }
+    }
+
+    #links{
+        float: right;
+
+        text-align: right;
+
+        div{
+            display: inline-block;
+            margin: 0.5em;
+
+            color: $text-icons;
+        }
+    }
 }
+
