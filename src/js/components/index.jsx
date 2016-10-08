@@ -7,7 +7,7 @@ export default class Index extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="title" class="card card-1">
                 stuff here
             </div>
                 );
