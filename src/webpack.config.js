@@ -27,8 +27,9 @@ module.exports = {
                 loaders: ["style", "css", "sass"]
             },
             {test: /\.png$/, loader: 'file-loader'},
-            { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader:"url?limit=10000&mimetype=application/font-woff" },
-            { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file" }
+            {test: /\.svg$/, loader: 'svg-inline?classPrefix'}
+            // { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader:"url?limit=10000&mimetype=application/font-woff" },
+            // { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file" }
         ]
     },
     output: {
