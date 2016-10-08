@@ -12,7 +12,7 @@ export default class Index extends React.Component {
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <InlineSVG src={require("./../../resources/self-portrait.svg")}/>
+                            <InlineSVG id='portrait' src={require("./../../resources/self-portrait.svg")}/>
                         </div>
                     </div>
                 </div>
