@@ -95,7 +95,6 @@ body {
 
         div{
             margin: 0.5em;
-
             color: $text-icons;
 
         }
@@ -104,13 +103,13 @@ body {
     #links{
         float: right;
 
-        text-align: right;
-
         div{
             display: inline-block;
+            width: 2em;
             margin: 0.5em;
 
             color: $text-icons;
+
         }
     }
 }

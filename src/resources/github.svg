@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1000"
-   height="700"
-   viewBox="0 0 1000 700"
+   height="1000"
+   viewBox="0 0 999.99999 1000"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="self-portrait.svg">
+   sodipodi:docname="github.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="479.28571"
-     inkscape:cy="291.42857"
+     inkscape:zoom="0.7"
+     inkscape:cx="469.28571"
+     inkscape:cy="405.71429"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -40,23 +40,13 @@
      inkscape:showpageshadow="false"
      gridtolerance="10"
      inkscape:snap-tangential="true"
-     inkscape:snap-perpendicular="true"
-     showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:snap-perpendicular="true">
     <inkscape:grid
        type="xygrid"
        id="grid4155"
        empspacing="10"
        spacingx="9.9999999"
-       spacingy="7" />
-    <sodipodi:guide
-       position="500,560"
-       orientation="1,0"
-       id="guide4178" />
-    <sodipodi:guide
-       position="370,350"
-       orientation="0,1"
-       id="guide4180" />
+       spacingy="10" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -74,12 +64,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-352.36216)">
-    <circle
-       style="fill:#607d8b;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       id="path4184"
-       cx="500"
-       cy="702.36218"
-       r="350" />
+     transform="translate(0,-52.362161)">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       id="rect4884"
+       width="1000"
+       height="1000"
+       x="0"
+       y="52.36216" />
   </g>
 </svg>
