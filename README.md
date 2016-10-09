@@ -2,14 +2,21 @@
  - [ ] favicon
  - [ ] topbar
   - [x] center name and links
-  - [ ] responsive hamburger
+  - [x] responsive hamburger
     - [x] side drawer
     - [x] fix shadow when expanded and resizing
-    
+  - [ ] images
+    - [ ] twitter
+    - [ ] gmail
+    - [ ] linked-in
+    - [ ] github
+    - [ ] hamburger
  - [ ] bio card
    - [ ] avatar
    - [ ] bio
    - [ ] skills button
    - [ ] collapse
-   
+ - [ ] readme
+   - [ ] docker start
+   - [ ] flow description
    

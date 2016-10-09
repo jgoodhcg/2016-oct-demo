@@ -118,6 +118,8 @@ body {
 
         text-align: right;
 
+        transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+
         div{
             display: inline-block;
             height: 1.5em;
@@ -126,18 +128,29 @@ body {
 
             color: $text-icons;
 
+            &#hamburger{
+                transition: all 0.25s cubic-bezier(0.25,0.8,0.25,1);
+            }
+
+            //
+            // medium to large screens
+            //
             @media screen and (min-width: $breakpoint-small){
                 &#hamburger{
                     display: none;
                 }
             }
         }
-        
+
+        //
+        // small screens
+        //
         @media screen and (max-width: $breakpoint-small){
             &.collapsed{
                 div:not(#hamburger){
                     display: none;
                 }
+
                 div#hamburger{
                     display: inline-block;
                 }
@@ -158,6 +171,11 @@ body {
 
                 div{
                     display: inline-block;
+
+                    &#hamburger{
+                        transform: rotate(90deg);
+
+                    }
                 }
             }
         }
