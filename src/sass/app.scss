@@ -119,12 +119,21 @@ body {
             margin: 0.25em;
 
             color: $text-icons;
-        }
 
+            @media screen and (min-width: $breakpoint-small){
+                &#hamburger{
+                    display: none;
+                }
+            }
+        }
+        
         @media screen and (max-width: $breakpoint-small){
             &.collapsed{
                 div:not(#hamburger){
                     display: none;
+                }
+                div#hamburger{
+                    display: inline-block;
                 }
             }
             &.expanded{
