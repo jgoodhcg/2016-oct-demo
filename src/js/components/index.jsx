@@ -6,10 +6,19 @@ export default class Index extends React.Component {
         super();
     }
 
+    collapseClick(e){
+        let title_card = document.getElementById("title");
+        if(title_card.className.includes("collapsed")){
+            title_card.className = title_card.className.replace("collapsed", "");
+        }else{
+            title_card.className += " collapsed";
+        }
+    }
+
     render() {
         return (
-            <div id="title" class="card card-1 expanded">
-                <div class="container">
+            <div id="title" class="card card-1">
+                <div class="container expanded-only">
                     <div class="row">
                         <div class="col-12">
                             <InlineSVG id='portrait' src={require("./../../resources/self-portrait.svg")}/>
@@ -22,7 +31,7 @@ export default class Index extends React.Component {
                     </div>
                 </div>
                 <div class="collapse-btn-container">
-                    <div class="collapse-btn">
+                    <div class="collapse-btn" onClick={this.collapseClick}>
                         <InlineSVG src={require("./../../resources/collapse.svg")}/>
                     </div>
                 </div>
