@@ -78,6 +78,12 @@ body {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+.side-drawer-right{
+    z-index: 6;
+
+    box-shadow: -30px 20px 76px rgba(0,0,0,0.35), 0px 20px 25px rgba(0,0,0,0.22);
+}
+
 #top-bar{
     position: relative;
 
@@ -104,6 +110,8 @@ body {
     #links{
         float: right;
 
+        text-align: right;
+
         div{
             display: inline-block;
             height: 1.5em;
@@ -114,7 +122,27 @@ body {
         }
 
         @media screen and (max-width: $breakpoint-small){
-            background-color: $light-primary;
+            &.collapsed{
+                div:not(#hamburger){
+                    display: none;
+                }
+            }
+            &.expanded{
+                position: fixed;
+                right: 0;
+                top: 0;
+                float: none;
+
+                width: 3em;
+                height: auto;
+                padding-right: 1em;
+
+                background-color: $light-primary;    
+
+                div{
+                    display: inline-block;
+                }
+            }
         }
     }
 }

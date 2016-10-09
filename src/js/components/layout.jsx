@@ -7,7 +7,20 @@ export default class Layout extends React.Component {
     }
 
     hamburgerClick(e){
-        console.log(e);
+        // shitty method for toggling expanded/collapsed classes
+        // TODO refactor or use jquery
+        let links = document.getElementById("links");
+        if(links.className.includes("collapsed")){
+            links.className = links.className.replace("collapsed", "");
+            if(!links.className.includes("expanded side-drawer-right")){
+                links.className += " expanded side-drawer-right";
+            }
+        }else if(links.className.includes("expanded side-drawer-right")){
+            links.className = links.className.replace("expanded side-drawer-right", "");
+            if(!links.className.includes("collapsed")){
+                links.className += " collapsed";
+            }
+        }
     }
 
     render() {
@@ -17,7 +30,10 @@ export default class Layout extends React.Component {
                     <div id="name">
                         <div>Justin Good</div>
                     </div>
-                    <div id="links">
+                    <div id="links" class="collapsed">
+                        <div id="hamburger" onClick={this.hamburgerClick}>
+                            <InlineSVG src={require("./../../resources/hamburger.svg")}/>
+                        </div>
                         <div id="gmail">
                             <InlineSVG src={require("./../../resources/gmail.svg")}/>
                         </div>
@@ -29,9 +45,6 @@ export default class Layout extends React.Component {
                         </div>
                         <div id="github">
                             <InlineSVG src={require("./../../resources/github.svg")}/>
-                        </div>
-                        <div id="hamburger" onClick={this.hamburgerClick}>
-                            <InlineSVG src={require("./../../resources/hamburger.svg")}/>
                         </div>
                     </div>
                 </div>
