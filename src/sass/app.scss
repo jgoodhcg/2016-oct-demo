@@ -82,21 +82,21 @@ body {
 
     display: block;
     width: 100%;
-    overflow: auto;
+    height: 2em;
+    overflow: hidden;
     padding-left: 1em;
     padding-right: 1em;
 
     background-color: $dark-primary;
 
-    font-size: 2em;
+    font-size: 1.5em;
 
     #name{
         float: left;
 
         div{
-            margin: 0.5em;
+            margin: 0.25em;
             color: $text-icons;
-
         }
     }
 
@@ -105,11 +105,11 @@ body {
 
         div{
             display: inline-block;
-            width: 2em;
-            margin: 0.5em;
+            height: 1.5em;
+            width: 1.5em;
+            margin: 0.25em;
 
             color: $text-icons;
-
         }
     }
 }

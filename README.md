@@ -1,13 +1,8 @@
-###todo
-
+###todo 
  - [ ] favicon
  - [ ] topbar
-   - [ ] name/username (fade in and out?)
-   - [ ] links
-     - [ ] twitter
-     - [ ] gmail
-     - [ ] linked in
-     - [ ] github
+  - [ ] center name and links
+  - [ ] responsive hamburger
  - [ ] bio card
    - [ ] avatar
    - [ ] bio
