@@ -6,6 +6,10 @@ export default class Layout extends React.Component {
         super();
     }
 
+    hamburgerClick(e){
+        console.log(e);
+    }
+
     render() {
         return (
             <div id="app-container">
@@ -25,6 +29,9 @@ export default class Layout extends React.Component {
                         </div>
                         <div id="github">
                             <InlineSVG src={require("./../../resources/github.svg")}/>
+                        </div>
+                        <div id="hamburger" onClick={this.hamburgerClick}>
+                            <InlineSVG src={require("./../../resources/hamburger.svg")}/>
                         </div>
                     </div>
                 </div>
