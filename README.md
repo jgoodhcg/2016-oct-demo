@@ -5,6 +5,7 @@
   - [x] responsive hamburger
     - [x] side drawer
     - [x] fix shadow when expanded and resizing
+    - [x] some kinda transition
   - [ ] images
     - [ ] twitter
     - [ ] gmail
