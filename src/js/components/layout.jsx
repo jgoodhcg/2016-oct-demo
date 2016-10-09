@@ -12,11 +12,11 @@ export default class Layout extends React.Component {
         let links = document.getElementById("links");
         if(links.className.includes("collapsed")){
             links.className = links.className.replace("collapsed", "");
-            if(!links.className.includes("expanded side-drawer-right")){
-                links.className += " expanded side-drawer-right";
+            if(!links.className.includes("expanded ")){
+                links.className += " expanded ";
             }
-        }else if(links.className.includes("expanded side-drawer-right")){
-            links.className = links.className.replace("expanded side-drawer-right", "");
+        }else if(links.className.includes("expanded ")){
+            links.className = links.className.replace("expanded ", "");
             if(!links.className.includes("collapsed")){
                 links.className += " collapsed";
             }

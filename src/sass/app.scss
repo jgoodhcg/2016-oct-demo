@@ -78,11 +78,17 @@ body {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.side-drawer-right{
+@mixin side-drawer-right-shadow{
     z-index: 6;
 
     box-shadow: -30px 20px 76px rgba(0,0,0,0.35), 0px 20px 25px rgba(0,0,0,0.22);
 }
+
+.side-drawer-right{
+    @include side-drawer-right-shadow;
+}
+
+
 
 #top-bar{
     position: relative;
@@ -147,6 +153,8 @@ body {
                 padding-right: 1em;
 
                 background-color: $light-primary;    
+
+                @include side-drawer-right-shadow;
 
                 div{
                     display: inline-block;
