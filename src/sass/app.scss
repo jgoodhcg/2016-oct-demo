@@ -192,9 +192,18 @@ body {
     background-color: $text-icons;
     color: $primary-text;
 
+    .collapsed-only{
+        display: none;
+    }
+
     &.collapsed{
+        padding: 0.5em;
+
         .expanded-only{
             display: none;
+        }
+        .collapsed-only{
+            display: inline;
         }
     }
 }
