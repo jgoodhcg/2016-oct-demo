@@ -184,7 +184,6 @@ body {
 
 #title{
     position: relative;
-    vertical-align: top;
 
     display: block;
     padding: 2em;
@@ -192,16 +191,8 @@ body {
     background-color: $text-icons;
     color: $primary-text;
 
-    .collapsed-only{
-        display: none;
-    }
-
     &.collapsed{
         padding: 0.5em;
-
-        div .collapse-btn{
-            transform: rotate(180deg);
-        }
 
         .expanded-only{
             display: none;
@@ -210,12 +201,36 @@ body {
             display: inline;
         }
     }
+
+    .collapsed-only{
+        display: none;
+    }
+
+    div div #tagline{
+        text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+
+    }
 }
 
 .collapse-btn-container{
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    z-index: 99;
+
     width: 100%;
 
     text-align: right;
+
+    &.collapsed{
+        bottom: 40%;
+
+        .collapse-btn{
+            transform: rotate(180deg);
+        }
+    }
 
     .collapse-btn{
         display: inline-block;
