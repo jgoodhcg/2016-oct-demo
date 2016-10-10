@@ -1,6 +1,10 @@
 @import './../sass/simple-grid';
 
 /* CSS GROUPING GUIDE (line between each)
+$variables
+@keyframes
+@includes
+animations
 Positioning
 Display & Box Model
 Color
@@ -40,8 +44,6 @@ body {
   border-radius: 2px;
 
   background: #fff;
-
-  transition: all 0.75s cubic-bezier(.25,.8,.25,1);
 }
 
 .card-1 {
@@ -114,22 +116,31 @@ body {
     }
 
     #links{
+        $icon-size: 1.5em;
+        $icon-margin: 0.25em;
+
+        @keyframes grow {
+            0% {
+                max-height: $icon-size+(2*$icon-margin);
+            }
+            100% {
+                max-height: 6*($icon-size+(2*$icon-margin));
+            }
+        }
         float: right;
 
         text-align: right;
 
-        transition: all 0.5s cubic-bezier(.25,.8,.25,1);
-
         div{
             display: inline-block;
-            height: 1.5em;
-            width: 1.5em;
-            margin: 0.25em;
+            height: $icon-size;
+            width: $icon-size;
+            margin: $icon-margin;
 
             color: $text-icons;
 
             &#hamburger{
-                transition: all 0.25s cubic-bezier(0.25,0.8,0.25,1);
+                transition: transform 0.25s cubic-bezier(0.25,0.8,0.25,1);
             }
 
             //
@@ -156,18 +167,22 @@ body {
                 }
             }
             &.expanded{
+                $drawer-padding: 1em;
+
+                @include side-drawer-right-shadow;
+
+                animation: grow 0.25s 0.2s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+
                 position: fixed;
                 right: 0;
                 top: 0;
                 float: none;
 
-                width: 3em;
-                height: auto;
-                padding-right: 1em;
+                width: $icon-size+(2*$icon-margin)+$drawer-padding;
+                padding-right: $drawer-padding;
+                overflow: hidden;
 
-                background-color: $light-primary;    
-
-                @include side-drawer-right-shadow;
+                background-color: $light-primary;
 
                 div{
                     display: inline-block;
