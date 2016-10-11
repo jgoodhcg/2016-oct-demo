@@ -202,14 +202,13 @@ body {
 
 #title{
     $padding-top: 3.5em;
-    $portrait-size-sm: 4em;
-    $portrait-size-md: 8em;
-    $portrait-size-lg: 9em;
+    $portrait-size-exp-sm: 15em;
+    $portrait-size-clp-sm: 4em;
     $collapse-time: 0.5s;
 
     @keyframes title-collapse-sm {
         0%   {max-height: 30em;}
-        100% {max-height: $padding-top + $portrait-size-sm + 1em;}
+        100% {max-height: $padding-top + $portrait-size-clp-sm + 1em;}
     }
 
     @keyframes portrait-collapse-sm{
@@ -231,7 +230,20 @@ body {
     background-color: $text-icons;
     color: $primary-text;
 
-    #info #tagline{margin-bottom: 0em;}
+    #portrait{
+        position: absolute;
+        top: $padding-top;
+        left: 0em;
+        right: 0em;
+
+        margin: auto;
+
+        i svg{height: $portrait-size-exp-sm;}
+    }
+    #info{
+        padding-top: $portrait-size-exp-sm;
+        #tagline{margin-bottom: 0em;}  
+    } 
 
     @media screen and (max-width: $breakpoint-small){
         &.collapsed{
@@ -239,7 +251,6 @@ body {
 
             animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
             #portrait{
-                position: absolute;
                 left: 0em;
                
                 animation: portrait-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
