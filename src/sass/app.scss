@@ -205,11 +205,21 @@ body {
     $portrait-size-sm: 4em;
     $portrait-size-md: 8em;
     $portrait-size-lg: 9em;
-    $collapse-time: 1s;
+    $collapse-time: 0.5s;
 
     @keyframes title-collapse-sm {
-        0%{max-height: 50em;}
+        0%   {max-height: 30em;}
         100% {max-height: $padding-top + $portrait-size-sm + 1em;}
+    }
+
+    @keyframes portrait-collapse-sm{
+        0%   {}
+        100% {width: 20%;}
+    }
+
+    @keyframes info-collapse-sm{
+        0%   {}
+        100% {width: 80%;}
     }
 
     position: relative;
@@ -221,16 +231,32 @@ body {
     background-color: $text-icons;
     color: $primary-text;
 
-    &.collapsed{
-        @media screen and (max-width: $breakpoint-small){
-            animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-        }
-        @media screen and (min-width: $breakpoint-med){border: 1px solid green;}
-        @media screen and (min-width: $breakpoint-large){border: 1px solid blue;}
+    #info #tagline{margin-bottom: 0em;}
 
-        padding: 0.5em;
-        padding-top: $padding-top;
+    @media screen and (max-width: $breakpoint-small){
+        &.collapsed{
+            overflow: hidden;
+
+            animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+            #portrait{
+                position: absolute;
+                left: 0em;
+               
+                animation: portrait-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+            }
+            #info{
+                display: inline-block;
+
+                animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+
+                #bio{
+                    opacity: 0;
+                }
+            }
+        }
     }
+    @media screen and (min-width: $breakpoint-med){border: 1px solid green;}
+    @media screen and (min-width: $breakpoint-large){border: 1px solid blue;}
 }
 
 .collapse-btn-container{
@@ -243,12 +269,8 @@ body {
 
     text-align: right;
 
-    &.collapsed{
-        bottom: 40%;
-
-        .collapse-btn{
+    &.collapsed .collapse-btn{
             transform: rotate(180deg);
-        }
     }
 
     .collapse-btn{
