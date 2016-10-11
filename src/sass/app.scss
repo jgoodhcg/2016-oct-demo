@@ -212,8 +212,23 @@ body {
     }
 
     @keyframes portrait-collapse-sm{
-        0%   {}
-        100% {width: 20%;}
+        0%   {
+            left: 0em;
+            right: 0em;
+
+            margin: auto;
+        }
+        100% {
+            left: 2em;
+            right: none;
+
+            margin: none;
+        }
+    }
+
+    @keyframes portrait-svg-collapse-sm{
+        0%   {}        
+        100% {height: $portrait-size-clp-sm;}
     }
 
     @keyframes info-collapse-sm{
@@ -251,9 +266,10 @@ body {
 
             animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
             #portrait{
-                left: 0em;
-               
                 animation: portrait-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+                i svg{
+                    animation: portrait-svg-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+                }
             }
             #info{
                 display: inline-block;
