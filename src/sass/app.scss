@@ -208,7 +208,10 @@ body {
 
     @keyframes title-collapse-sm {
         0%   {max-height: 30em;}
-        100% {max-height: $padding-top + $portrait-size-clp-sm + 1em;}
+        100% {
+            max-height: $padding-top + $portrait-size-clp-sm + 1em;
+            overflow: hidden;
+        }
     }
 
     @keyframes portrait-collapse-sm{
@@ -258,11 +261,11 @@ body {
     #info{
         padding-top: $portrait-size-exp-sm;
         #tagline{margin-bottom: 0em;}  
+        #bio{margin-top: 0.1em;}
     } 
 
     @media screen and (max-width: $breakpoint-small){
         &.collapsed{
-            overflow: hidden;
 
             animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
             #portrait{
@@ -273,12 +276,11 @@ body {
             }
             #info{
                 display: inline-block;
+                padding-top: 0em;
+
+                #bio{opacity: 0;}
 
                 animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-
-                #bio{
-                    opacity: 0;
-                }
             }
         }
     }
