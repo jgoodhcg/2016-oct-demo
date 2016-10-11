@@ -93,7 +93,7 @@ body {
 
 
 #top-bar{
-    position: relative;
+    position: fixed;
 
     display: block;
     width: 100%;
@@ -119,14 +119,19 @@ body {
         $icon-size: 1.5em;
         $icon-margin: 0.25em;
 
-        @keyframes grow {
+        @keyframes links-grow {
             0% {
                 max-height: $icon-size+(2*$icon-margin);
             }
-            100% {
+            85%{
                 max-height: 6*($icon-size+(2*$icon-margin));
             }
+            100% {
+                max-height: 6*($icon-size+(2*$icon-margin));
+                background-color: $light-primary;
+            }
         }
+
         float: right;
 
         text-align: right;
@@ -171,7 +176,7 @@ body {
 
                 @include side-drawer-right-shadow;
 
-                animation: grow 0.25s 0.2s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+                animation: links-grow 0.25s 0.2s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
 
                 position: fixed;
                 right: 0;
@@ -181,8 +186,6 @@ body {
                 width: $icon-size+(2*$icon-margin)+$drawer-padding;
                 padding-right: $drawer-padding;
                 overflow: hidden;
-
-                background-color: $light-primary;
 
                 div{
                     display: inline-block;
@@ -198,34 +201,35 @@ body {
 }
 
 #title{
+    $padding-top: 3.5em;
+    $portrait-size-sm: 4em;
+    $portrait-size-md: 8em;
+    $portrait-size-lg: 9em;
+    $collapse-time: 1s;
+
+    @keyframes title-collapse-sm {
+        0%{max-height: 50em;}
+        100% {max-height: $padding-top + $portrait-size-sm + 1em;}
+    }
+
     position: relative;
 
     display: block;
     padding: 2em;
+    padding-top: $padding-top;
 
     background-color: $text-icons;
     color: $primary-text;
 
     &.collapsed{
+        @media screen and (max-width: $breakpoint-small){
+            animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+        }
+        @media screen and (min-width: $breakpoint-med){border: 1px solid green;}
+        @media screen and (min-width: $breakpoint-large){border: 1px solid blue;}
+
         padding: 0.5em;
-
-        .expanded-only{
-            display: none;
-        }
-        .collapsed-only{
-            display: inline;
-        }
-    }
-
-    .collapsed-only{
-        display: none;
-    }
-
-    div div #tagline{
-        text-align: left;
-        overflow: hidden;
-        white-space: nowrap;
-
+        padding-top: $padding-top;
     }
 }
 
