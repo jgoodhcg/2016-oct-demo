@@ -24,6 +24,7 @@ $dark-primary : #455A64;
 $text-icons: #ffffff; 
 $primary-text: #212121;
 $light-primary: #cfd8dc;
+$accent-color: #03A9F4;
 
 html {
   box-sizing: border-box;
@@ -53,7 +54,8 @@ body {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.card1-hover:hover {
+.card-1-hover:hover {
+    transition: box-shadow 0.35s cubic-bezier(0.25,0.8,0.25,1);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -281,3 +283,13 @@ body {
     }
 }
 
+input[type="button"]{
+    border: none;
+    border-radius: 2px;
+
+    font-size: 1em;
+
+    color: white;
+    background: none;
+    background-color: $accent-color;
+}

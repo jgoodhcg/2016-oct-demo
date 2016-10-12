@@ -47,7 +47,7 @@ export default class Index extends React.Component {
                        </span>
                     </p>
                 </div>
-                <div><input type="button"  value="clickable"></input></div>
+                <div><input type="button" class="card-1 card-1-hover" value="experience"></input></div>
                 <div id="title-collapse-btn" class="collapse-btn-container">
                     <div class="collapse-btn" onClick={this.collapseClick}>
                         <InlineSVG src={require("./../../resources/collapse.svg")}/>
