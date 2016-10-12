@@ -7,29 +7,28 @@ export default class Index extends React.Component {
     }
 
     collapseClick(e){
+        console.log("clicked!");
         let title_card = document.getElementById("title"),
-            title_card_parent = title_card.parentNode,
             collapse_btn = document.getElementById("title-collapse-btn");
 
+        // TODO refactor collapse or use jquery toggle
         if(title_card.className.includes("collapsed")){
             title_card.className = title_card.className.replace("collapsed", "");
-            collapse_btn.className = collapse_btn.className.replace("collapsed", "");
-        }else{
-            title_card.className += " collapsed";
-            collapse_btn.className += " collapsed";
+            if(!title_card.className.includes("expanded")){
+                title_card.className += " expanded";
+            }
+        }else if (title_card.className.includes("expanded")){
+            title_card.className = title_card.className.replace("expanded", "");
+            if(!title_card.className.includes("collapsed")){
+                title_card.className += " collapsed";
+            }
         }
-
-        /* removing and appending clone "refreshes" the animations so they run again*/
-        /* title_card.addEventListener("animationend", (title_card, title_card_parent) => {
-         *     let title_card_new = title_card.cloneNode(true);
-         *     title_card_parent.appendChild(title_card_new);
-         *     title_card_parent.removeChild(title_card);
-         * }, false);*/
+        console.log(title_card.className);
     }
 
     render() {
         return (
-            <div id="title" class="card card-1">
+            <div id="title" class="card card-1 expanded">
                 <div id="portrait">
                     <InlineSVG src={require("./../../resources/self-portrait.svg")}/>
                 </div>

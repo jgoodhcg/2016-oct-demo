@@ -1,0 +1,66 @@
+$padding-top: 3.5em;
+$portrait-size-exp-sm: 15em;
+$portrait-size-clp-sm: 4em;
+$collapse-time: 0.5s;
+
+@keyframes title-collapse-sm {
+    0%   {max-height: 40em;}
+    100% {
+        max-height: $padding-top + $portrait-size-clp-sm + 1em;
+        overflow: hidden;
+    }
+}
+@keyframes title-expand-sm {
+    0%  {
+        max-height: $padding-top + $portrait-size-clp-sm + 1em;
+        overflow: hidden;
+    }
+    100% {max-height: 99em;}
+}
+
+@keyframes portrait-collapse-sm{
+    0%   {
+        left: 0em;
+        right: 0em;
+
+        margin: auto;
+    }
+    100% {
+        left: 2em;
+        right: auto;
+
+        margin: none;
+    }
+}
+@keyframes portrait-expand-sm{
+    0% {
+        left: 2em;
+        right: auto;
+
+        margin: none;
+    }
+    100%   {
+        left: 0em;
+        right: 0em;
+
+        margin: auto;
+    }
+}
+
+@keyframes portrait-svg-collapse-sm{
+    0%   {height: $portrait-size-exp-sm;}        
+    100% {height: $portrait-size-clp-sm;}
+}
+@keyframes portrait-svg-expand-sm{
+    0% {height: $portrait-size-clp-sm;}
+    100%   {height: $portrait-size-exp-sm;}        
+}
+
+@keyframes info-collapse-sm{
+    0%   {width: 100%;}
+    100% {width: 80%;}
+}
+@keyframes info-expand-sm{
+    0% {width: 80%;}
+    100%   {width: 100%;}
+}

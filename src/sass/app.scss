@@ -1,6 +1,7 @@
 @import './../sass/simple-grid';
 
 /* CSS GROUPING GUIDE (line between each)
+@imports
 $variables
 @keyframes
 @includes
@@ -201,43 +202,7 @@ body {
 }
 
 #title{
-    $padding-top: 3.5em;
-    $portrait-size-exp-sm: 15em;
-    $portrait-size-clp-sm: 4em;
-    $collapse-time: 0.5s;
-
-    @keyframes title-collapse-sm {
-        0%   {max-height: 40em;}
-        100% {
-            max-height: $padding-top + $portrait-size-clp-sm + 1em;
-            overflow: hidden;
-        }
-    }
-
-    @keyframes portrait-collapse-sm{
-        0%   {
-            left: 0em;
-            right: 0em;
-
-            margin: auto;
-        }
-        100% {
-            left: 2em;
-            right: auto;
-
-            margin: none;
-        }
-    }
-
-    @keyframes portrait-svg-collapse-sm{
-        0%   {height: $portrait-size-exp-sm;}        
-        100% {height: $portrait-size-clp-sm;}
-    }
-
-    @keyframes info-collapse-sm{
-        0%   {width: 100%;}
-        100% {width: 80%;}
-    }
+    @import './../sass/animations/title.scss';
 
     position: relative;
 
@@ -267,12 +232,6 @@ body {
         #bio{margin-top: 0.1em;}
     } 
 
-    @mixin info-collapsed{
-        display: inline-block;
-        padding-top: 0em;
-        
-        #bio{opacity: 0;}
-    }
     @media screen and (max-width: $breakpoint-small){
         &.collapsed{
             animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
@@ -283,23 +242,25 @@ body {
                 }
             }
             #info{
-                @include info-collapsed;
+                display: inline-block;
+                padding-top: 0em;
+
                 animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+
+                #bio{opacity: 0;}
             }
         }
         &.expanded{
-             animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) reverse forwards;
+             animation: title-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
             #portrait{
-                animation: portrait-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) reverse forwards;
+                animation: portrait-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
                 i svg{
-                    animation: portrait-svg-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) reverse forwards;
+                    animation: portrait-svg-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
                 }
             }
             #info{
-                @include info-collapsed;
-                animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) reverse forwards;
+                animation: info-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
             }
-
         }
     }
     @media screen and (min-width: $breakpoint-med){border: 1px solid green;}

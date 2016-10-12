@@ -8,7 +8,7 @@ export default class Layout extends React.Component {
 
     hamburgerClick(e){
         // shitty method for toggling expanded/collapsed classes
-        // TODO refactor or use jquery
+        // TODO refactor collapse or use jquery toggle
         let links = document.getElementById("links");
         if(links.className.includes("collapsed")){
             links.className = links.className.replace("collapsed", "");
