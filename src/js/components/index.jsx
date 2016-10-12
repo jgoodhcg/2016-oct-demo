@@ -40,23 +40,14 @@ export default class Index extends React.Component {
                     <InlineSVG src={require("./../../resources/self-portrait.svg")}/>
                 </div>
                 <div id="info" >
-                    <p id="tagline" >tagline here!</p>
-                    <p id="bio" >
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                        fugit,
-                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                        quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-                        numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-                        enim
-                        ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-                        aliquid
-                        ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                    <p>
+                        <span id="tagline" >tagline here, make it of a little length! </span>
+                        <span id="bio" >
+                            this is where I would put a bio IF I HAD ONE! But really this should be a couple of lines long maybe even explaining this project and my life goals. More importantly there needs to be a clicky button because if you can't click it nobody will read it and they probably still won't read it if they can click it.
+                       </span>
                     </p>
                 </div>
+                <div><input type="button"  value="clickable"></input></div>
                 <div id="title-collapse-btn" class="collapse-btn-container">
                     <div class="collapse-btn" onClick={this.collapseClick}>
                         <InlineSVG src={require("./../../resources/collapse.svg")}/>

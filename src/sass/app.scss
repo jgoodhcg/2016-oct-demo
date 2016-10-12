@@ -224,47 +224,38 @@ body {
         i svg{height: $portrait-size-exp-sm;}
     }
     #info{
-        padding-top: $portrait-size-exp-sm;
-
         text-align: center;
 
         #tagline{margin-bottom: 0em;}  
         #bio{margin-top: 0.1em;}
     } 
 
-    @media screen and (max-width: $breakpoint-small){
-        &.collapsed{
-            animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-            #portrait{
-                animation: portrait-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-                i svg{
-                    animation: portrait-svg-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-                }
-            }
-            #info{
-                display: inline-block;
-                padding-top: 0em;
-
-                animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-
-                #bio{opacity: 0;}
+    &.collapsed{
+        animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+        #portrait{
+            animation: portrait-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+            i svg{
+                animation: portrait-svg-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
             }
         }
-        &.expanded{
-             animation: title-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-            #portrait{
-                animation: portrait-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-                i svg{
-                    animation: portrait-svg-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-                }
-            }
-            #info{
-                animation: info-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
-            }
+        #info{
+            animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+
+            #bio{opacity: 0.3;}
         }
     }
-    @media screen and (min-width: $breakpoint-med){border: 1px solid green;}
-    @media screen and (min-width: $breakpoint-large){border: 1px solid blue;}
+    &.expanded{
+        animation: title-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+        #portrait{
+            animation: portrait-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+            i svg{
+                animation: portrait-svg-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+            }
+        }
+        #info{
+            animation: info-expand-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
+        }
+    }
 }
 
 .collapse-btn-container{
