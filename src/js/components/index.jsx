@@ -7,23 +7,30 @@ export default class Index extends React.Component {
     }
 
     collapseClick(e){
-        console.log("clicked!");
         let title_card = document.getElementById("title"),
             collapse_btn = document.getElementById("title-collapse-btn");
 
         // TODO refactor collapse or use jquery toggle
+        if(collapse_btn.className.includes("collapsed")){
+            collapse_btn.className = collapse_btn.className.replace("collapsed", "");
+        }else{
+            collapse_btn.className = collapse_btn.className.trim();
+            collapse_btn.className += " collapsed";
+        }
+
         if(title_card.className.includes("collapsed")){
             title_card.className = title_card.className.replace("collapsed", "");
             if(!title_card.className.includes("expanded")){
+                title_card.className = title_card.className.trim();
                 title_card.className += " expanded";
             }
         }else if (title_card.className.includes("expanded")){
             title_card.className = title_card.className.replace("expanded", "");
             if(!title_card.className.includes("collapsed")){
+                title_card.className = title_card.className.trim();
                 title_card.className += " collapsed";
             }
         }
-        console.log(title_card.className);
     }
 
     render() {
