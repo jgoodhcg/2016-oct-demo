@@ -207,7 +207,7 @@ body {
     $collapse-time: 0.5s;
 
     @keyframes title-collapse-sm {
-        0%   {max-height: 30em;}
+        0%   {max-height: 40em;}
         100% {
             max-height: $padding-top + $portrait-size-clp-sm + 1em;
             overflow: hidden;
@@ -230,12 +230,12 @@ body {
     }
 
     @keyframes portrait-svg-collapse-sm{
-        0%   {}        
+        0%   {height: $portrait-size-exp-sm;}        
         100% {height: $portrait-size-clp-sm;}
     }
 
     @keyframes info-collapse-sm{
-        0%   {}
+        0%   {width: 100%;}
         100% {width: 80%;}
     }
 
@@ -260,13 +260,21 @@ body {
     }
     #info{
         padding-top: $portrait-size-exp-sm;
+
+        text-align: center;
+
         #tagline{margin-bottom: 0em;}  
         #bio{margin-top: 0.1em;}
     } 
 
+    @mixin info-collapsed{
+        display: inline-block;
+        padding-top: 0em;
+        
+        #bio{opacity: 0;}
+    }
     @media screen and (max-width: $breakpoint-small){
         &.collapsed{
-
             animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
             #portrait{
                 animation: portrait-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
@@ -275,13 +283,23 @@ body {
                 }
             }
             #info{
-                display: inline-block;
-                padding-top: 0em;
-
-                #bio{opacity: 0;}
-
+                @include info-collapsed;
                 animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
             }
+        }
+        &.expanded{
+             animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) reverse forwards;
+            #portrait{
+                animation: portrait-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) reverse forwards;
+                i svg{
+                    animation: portrait-svg-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) reverse forwards;
+                }
+            }
+            #info{
+                @include info-collapsed;
+                animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) reverse forwards;
+            }
+
         }
     }
     @media screen and (min-width: $breakpoint-med){border: 1px solid green;}

@@ -8,6 +8,7 @@ export default class Index extends React.Component {
 
     collapseClick(e){
         let title_card = document.getElementById("title"),
+            title_card_parent = title_card.parentNode,
             collapse_btn = document.getElementById("title-collapse-btn");
 
         if(title_card.className.includes("collapsed")){
@@ -17,6 +18,13 @@ export default class Index extends React.Component {
             title_card.className += " collapsed";
             collapse_btn.className += " collapsed";
         }
+
+        /* removing and appending clone "refreshes" the animations so they run again*/
+        /* title_card.addEventListener("animationend", (title_card, title_card_parent) => {
+         *     let title_card_new = title_card.cloneNode(true);
+         *     title_card_parent.appendChild(title_card_new);
+         *     title_card_parent.removeChild(title_card);
+         * }, false);*/
     }
 
     render() {
