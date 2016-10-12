@@ -12,11 +12,12 @@
     - [ ] linked-in
     - [ ] github
     - [ ] hamburger
- - [ ] bio card
+ - [ ] title card
    - [ ] avatar
    - [ ] bio
    - [ ] skills button
-   - [ ] collapse
+   - [x] collapse
+   - [ ] refactor class toggling or use jquery
  - [ ] readme
    - [ ] docker start
    - [ ] flow description
