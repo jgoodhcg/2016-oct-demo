@@ -243,9 +243,13 @@ body {
             animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
 
             #bio{
+                margin-top: 1em;
+                margin-bottom: 99em;
+
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                
             }
         }
     }
