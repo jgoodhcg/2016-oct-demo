@@ -228,7 +228,6 @@ body {
     #info{
         text-align: center;
 
-        #tagline{margin-bottom: 0em;}  
         #bio{margin-top: 0.1em;}
     } 
 
@@ -243,7 +242,11 @@ body {
         #info{
             animation: info-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
 
-            #bio{opacity: 0.3;}
+            #bio{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
     }
     &.expanded{

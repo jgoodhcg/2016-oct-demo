@@ -40,11 +40,8 @@ export default class Index extends React.Component {
                     <InlineSVG src={require("./../../resources/self-portrait.svg")}/>
                 </div>
                 <div id="info" >
-                    <p>
-                        <span id="tagline" >tagline here, make it of a little length! </span>
-                        <span id="bio" >
+                    <p id="bio" >
                             this is where I would put a bio IF I HAD ONE! But really this should be a couple of lines long maybe even explaining this project and my life goals. More importantly there needs to be a clicky button because if you can't click it nobody will read it and they probably still won't read it if they can click it.
-                       </span>
                     </p>
                 </div>
                 <div><input type="button" class="card-1 card-1-hover" value="experience"></input></div>
