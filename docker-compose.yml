@@ -10,6 +10,7 @@ services:
       - "8080:8080"
     volumes:
       - wwwroot:/wwwroot
+      - ./src/resources:/wwwroot/resources
   webpack:
     build:
       context: .
@@ -20,6 +21,7 @@ services:
       - "35729:35729" ## for live reload
     volumes:
       - .:/app
+      - ./src/resources:/wwwroot/resources
       - wwwroot:/wwwroot
 volumes:
   wwwroot:

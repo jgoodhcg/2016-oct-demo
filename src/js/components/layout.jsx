@@ -32,7 +32,8 @@ export default class Layout extends React.Component {
                     </div>
                     <div id="links" class="collapsed">
                         <div id="hamburger" onClick={this.hamburgerClick}>
-                            <InlineSVG src={require("./../../resources/hamburger.svg")}/>
+                            <img src="/resources/hamburger.svg"/>
+                            {/* <InlineSVG src={require("./../../resources/hamburger.svg")}/> */}
                         </div>
                         <div id="gmail">
                             <InlineSVG src={require("./../../resources/gmail.svg")}/>
