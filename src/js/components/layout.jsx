@@ -4,23 +4,14 @@ import InlineSVG from 'svg-inline-react';
 export default class Layout extends React.Component {
     constructor() {
         super();
+
+        this.state = {collapsed: true};
     }
 
     hamburgerClick(e){
-        // shitty method for toggling expanded/collapsed classes
-        // TODO refactor collapse or use jquery toggle
-        let links = document.getElementById("links");
-        if(links.className.includes("collapsed")){
-            links.className = links.className.replace("collapsed", "");
-            if(!links.className.includes("expanded ")){
-                links.className += " expanded ";
-            }
-        }else if(links.className.includes("expanded ")){
-            links.className = links.className.replace("expanded ", "");
-            if(!links.className.includes("collapsed")){
-                links.className += " collapsed";
-            }
-        }
+        this.setState({
+           collapsed: !this.state.collapsed
+        });
     }
 
     render() {
@@ -30,8 +21,8 @@ export default class Layout extends React.Component {
                     <div id="name">
                         <div>Justin Good</div>
                     </div>
-                    <div id="links" class="collapsed">
-                        <div id="hamburger" onClick={this.hamburgerClick}>
+                    <div id="links" class={this.state.collapsed ? "collapsed" : "expanded"}>
+                        <div id="hamburger" onClick={this.hamburgerClick.bind(this)}>
                             <InlineSVG src={require("./../../resources/hamburger.svg")}/>
                         </div>
                         <div id="gmail">

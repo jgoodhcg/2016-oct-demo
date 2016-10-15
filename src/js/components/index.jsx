@@ -5,38 +5,21 @@ import { IndexLink, Link } from "react-router";
 export default class Index extends React.Component {
     constructor() {
         super();
+
+        this.state = {
+            collapsed: false
+        };
     }
 
     collapseClick(e){
-        let title_card = document.getElementById("title"),
-            collapse_btn = document.getElementById("title-collapse-btn");
-
-        // TODO refactor collapse or use jquery toggle
-        if(collapse_btn.className.includes("collapsed")){
-            collapse_btn.className = collapse_btn.className.replace("collapsed", "");
-        }else{
-            collapse_btn.className = collapse_btn.className.trim();
-            collapse_btn.className += " collapsed";
-        }
-
-        if(title_card.className.includes("collapsed")){
-            title_card.className = title_card.className.replace("collapsed", "");
-            if(!title_card.className.includes("expanded")){
-                title_card.className = title_card.className.trim();
-                title_card.className += " expanded";
-            }
-        }else if (title_card.className.includes("expanded")){
-            title_card.className = title_card.className.replace("expanded", "");
-            if(!title_card.className.includes("collapsed")){
-                title_card.className = title_card.className.trim();
-                title_card.className += " collapsed";
-            }
-        }
+        this.setState({
+            collapsed: !this.state.collapsed
+        });
     }
 
     render() {
         return (
-            <div id="title" class="card card-1 expanded">
+            <div id="title" class={"card card-1 " + (this.state.collapsed ? "collapsed" : "expanded")}>
                 <div id="portrait">
                     <InlineSVG src={require("./../../resources/self-portrait.svg")}/>
                 </div>
@@ -49,7 +32,7 @@ export default class Index extends React.Component {
                     <Link to="experience">Experience</Link>
                 </div>
                 <div id="title-collapse-btn" class="collapse-btn-container">
-                    <div class="collapse-btn" onClick={this.collapseClick}>
+                    <div class="collapse-btn" onClick={this.collapseClick.bind(this)}>
                         <InlineSVG src={require("./../../resources/collapse.svg")}/>
                     </div>
                 </div>
