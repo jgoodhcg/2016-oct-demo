@@ -1,24 +1,52 @@
 ###todo 
- - [ ] favicon
- - [ ] topbar
-  - [x] center name and links
-  - [x] responsive hamburger
-    - [x] side drawer
-    - [x] fix shadow when expanded and resizing
-    - [x] some kinda transition
-  - [ ] images
-    - [ ] twitter
-    - [ ] gmail
-    - [ ] linked-in
-    - [ ] github
-    - [ ] hamburger
- - [ ] title card
-   - [ ] avatar
-   - [ ] bio
-   - [ ] skills button
-   - [x] collapse
-   - [ ] refactor class toggling or use jquery
- - [ ] readme
-   - [ ] docker start
-   - [ ] flow description
-   
+- [ ] finish website
+  - [ ] favicon
+  - [ ] color scheme
+  - [ ] top bar
+    - [ ] icons
+    - [x] fix expansion animation
+  - [ ] title card
+    - [x] ellispis text over flow
+    - [ ] refactor collapse to use react render class
+    - [ ] bio
+    - [ ] local storage last visit for default collapse
+    - [ ] experience button
+      - [ ] delayed link(react route) with pre-animation
+      - [ ] skills that I want to use
+       - [ ] javascript, clojure, bash, sass, sql (languages)
+       - [ ] react, reagent, reframe, d3, snap, luminus (frameworks/libraries)
+       - [ ] node, lein, webpack, docker, vagrant, git, nginx, postgres (tools)
+      - [ ] employment
+        - [ ] onestop feb 2016 - present
+          - [ ] maintained & exteneded legacy e-commerce site and supporting applications
+          - [ ] php, python, javascript, bash, sql
+          - [ ] zend, jquery
+          - [ ] apache, mercurial, vagrant, potsgres
+        - [ ] city of wyoming may 2015 - nov 2015
+         - [ ] developed internal crud application for public works department
+         - [ ] php, javascript, sql, sass
+         - [ ] jquery
+         - [ ] IIS, git, microsoft sql server 08
+      - [ ] education
+        - [ ] GVSU B.S. CS and minor in Anthropology 2012 - 2015
+        - [ ] KCC general education and illustration 2011
+        - [ ] GRCC general education and film & video 2010 - 2011
+  - [ ] activity card
+    - [ ] clicky color thing
+      - [ ] modularize it to take up containing div
+      - [ ] when clicked fills page with expansion animation
+    - [ ] time sheet visualizations (coming soon)
+    - [ ] myfitness pall visualizations (coming soon)
+    - [ ] workout visualizations (coming soon)
+    - [ ] federal government api interaction (coming soon)
+    - [ ] blog
+      - [ ] setting up this site
+      - [ ] docker
+        - [ ] link to webpack docker setup
+        - [ ] modifications to tut
+      - [ ] webpack
+        - [ ] jsx
+        - [ ] css
+        - [ ] html
+      - [ ] react
+      - [ ] repo link

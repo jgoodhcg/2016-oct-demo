@@ -6,6 +6,7 @@ import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
 import Layout from "./components/layout.jsx";
 import Index from "./components/index.jsx";
+import Experience from "./components/experience.jsx";
 
 var metaTag=document.createElement('meta');
 metaTag.name = "viewport";
@@ -22,6 +23,7 @@ ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Layout}>
             <IndexRoute component={Index}></IndexRoute>
+            <Route path="experience" name="experience" component={Experience}></Route>
         </Route>
     </Router>, app);
 
