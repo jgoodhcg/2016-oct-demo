@@ -32,12 +32,15 @@
   - [ ] activity card
     - [ ] clicky color thing
       - [ ] modularize it to take up containing div
-      - [ ] when clicked fills page with expansion animation
-    - [ ] time sheet visualizations (coming soon)
-    - [ ] myfitness pall visualizations (coming soon)
-    - [ ] workout visualizations (coming soon)
-    - [ ] federal government api interaction (coming soon)
-    - [ ] blog (comming soon)
+        - [ ] modular and in single div
+        - [ ] seperate route
+        - [ ] info + back button
+    - [ ] cut out icons
+      - [ ] time sheet visualizations (coming soon)
+      - [ ] myfitness pall visualizations (coming soon)
+      - [ ] workout visualizations (coming soon)
+      - [ ] federal government api interaction (coming soon)
+      - [ ] blog (comming soon)
 
 Do Later
 - [ ] delayed link(react route) with pre-animation

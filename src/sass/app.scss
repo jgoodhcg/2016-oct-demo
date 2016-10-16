@@ -317,3 +317,25 @@ body {
         }
     }
 }
+
+#activities-container{
+    margin-top: 0.5em;
+}
+
+#activities{
+    // TODO remove colors
+    $primary-game: #FFC107;
+    $primary-software: #607D8B;
+    $primary-data: #009688;
+
+    padding: 1em 0.25em 1em 0.25em;
+
+    .row{
+        .card{margin: 0.2em; height: 10em; width: 16.8em;}
+        .game{background-color: $primary-game;}       
+        .software{background-color: $primary-software;}       
+        .data{background-color: $primary-data;}       
+        .soon{opacity: 0.5;}
+
+    } 
+}

@@ -4,7 +4,7 @@ $portrait-size-clp-sm: 4em;
 $collapse-time: 0.5s;
 
 @keyframes title-collapse-sm {
-    0%   {max-height: 99em;}
+    0%   {}
     100% {
         max-height: $padding-top + $portrait-size-clp-sm + 1em;
         overflow: hidden;
