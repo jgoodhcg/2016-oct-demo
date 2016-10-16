@@ -7,7 +7,7 @@
     - [x] fix expansion animation
   - [ ] title card
     - [x] ellispis text over flow
-    - [ ] refactor collapse to use react render class
+    - [x] refactor collapse to use react render class
     - [ ] bio
     - [ ] local storage last visit for default collapse
     - [ ] experience button
