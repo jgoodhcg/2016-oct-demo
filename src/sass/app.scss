@@ -23,6 +23,7 @@ card
 $dark-primary : #455A64;
 $text-icons: #ffffff; 
 $primary-text: #212121;
+$secondary-text: #757575;
 $light-primary: #cfd8dc;
 $accent-color: #03A9F4;
 
@@ -93,7 +94,11 @@ body {
     @include side-drawer-right-shadow;
 }
 
-
+#top-bar-spacer{
+    height: 3.5em;
+    display: block;
+    width: 100%;
+}
 
 #top-bar{
     position: fixed;
@@ -187,6 +192,10 @@ body {
     }
 }
 
+#title-container{
+    padding-top: 3.5em;
+}
+
 #title{
     @import './../sass/animations/title.scss';
 
@@ -194,14 +203,12 @@ body {
     display: block;
 
     padding: 2em;
-    padding-top: $padding-top;
 
     background-color: $text-icons;
     color: $primary-text;
 
     #portrait{
         position: absolute;
-        top: $padding-top;
         left: 0em;
         right: 0em;
 
@@ -213,10 +220,10 @@ body {
     #info{
         text-align: center;
 
-        #bio{margin-top: 0.1em;}
+        #bio{margin-top: 0.5em;}
     } 
 
-    #experience{
+    #experience-btn{
         display: inline-block;
         width: 10em;
         
@@ -226,12 +233,8 @@ body {
             margin: 0em;
             color: $text-icons;
         }
-        
-        &.linking{
-            background-color: red;
-        }
-   
     }
+
     &.collapsed{
         animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
         #portrait{
@@ -291,13 +294,26 @@ body {
     }
 }
 
-input[type="button"]{
-    border: none;
-    border-radius: 2px;
+#experience{
+    padding-top: 3.5em;
 
-    font-size: 1em;
+    .card{
+        padding: 0.7em;
+        margin-bottom: 1.5em;
 
-    color: white;
-    background: none;
-    background-color: $accent-color;
+        text-align: left;
+
+        h2{
+            margin: 0.1em;
+            color: $secondary-text
+        }
+        h3{
+            margin: 0.1em;
+            color: $secondary-text
+        }
+        p{
+            margin: 0.1em;
+            color: $primary-text;
+        }
+    }
 }

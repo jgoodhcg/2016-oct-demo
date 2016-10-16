@@ -9,28 +9,26 @@
     - [x] ellispis text over flow
     - [x] refactor collapse to use react render class
     - [ ] bio
-    - [ ] local storage last visit for default collapse
-    - [ ] experience button
-      - [ ] delayed link(react route) with pre-animation
-      - [ ] skills that I want to use
-       - [ ] javascript, clojure, bash, sass, sql (languages)
-       - [ ] react, reagent, reframe, d3, snap, luminus (frameworks/libraries)
-       - [ ] node, lein, webpack, docker, vagrant, git, nginx, postgres (tools)
-      - [ ] employment
-        - [ ] onestop feb 2016 - present
-          - [ ] maintained & exteneded legacy e-commerce site and supporting applications
-          - [ ] php, python, javascript, bash, sql
-          - [ ] zend, jquery
-          - [ ] apache, mercurial, vagrant, potsgres
-        - [ ] city of wyoming may 2015 - nov 2015
-         - [ ] developed internal crud application for public works department
-         - [ ] php, javascript, sql, sass
-         - [ ] jquery
-         - [ ] IIS, git, microsoft sql server 08
-      - [ ] education
-        - [ ] GVSU B.S. CS and minor in Anthropology 2012 - 2015
-        - [ ] KCC general education and illustration 2011
-        - [ ] GRCC general education and film & video 2010 - 2011
+    - [x] experience button
+      - [x] skills that I want to use
+       - [x] javascript, clojure, bash, sass, sql (languages)
+       - [x] react, reagent, reframe, d3, snap, luminus (frameworks/libraries)
+       - [x] node, lein, webpack, docker, vagrant, git, nginx, postgres (tools)
+      - [x] employment
+        - [x] onestop feb 2016 - present
+          - [x] maintained & exteneded legacy e-commerce site and supporting applications
+          - [x] php, python, javascript, bash, sql
+          - [x] zend, jquery
+          - [x] apache, mercurial, vagrant, potsgres
+        - [x] city of wyoming may 2015 - nov 2015
+         - [x] developed internal crud application for public works department
+         - [x] php, javascript, sql, sass
+         - [x] jquery
+         - [x] IIS, git, microsoft sql server 08
+      - [x] education
+        - [x] GVSU B.S. CS and minor in Anthropology 2012 - 2015
+        - [x] KCC general education and illustration 2011
+        - [x] GRCC general education and film & video 2010 - 2011
   - [ ] activity card
     - [ ] clicky color thing
       - [ ] modularize it to take up containing div
@@ -39,6 +37,12 @@
     - [ ] myfitness pall visualizations (coming soon)
     - [ ] workout visualizations (coming soon)
     - [ ] federal government api interaction (coming soon)
+    - [ ] blog (comming soon)
+
+Do Later
+- [ ] delayed link(react route) with pre-animation
+- [ ] local storage last visit for default collapse
+
     - [ ] blog
       - [ ] setting up this site
       - [ ] docker
@@ -50,3 +54,4 @@
         - [ ] html
       - [ ] react
       - [ ] repo link
+
