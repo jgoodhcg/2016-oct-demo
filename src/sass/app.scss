@@ -217,14 +217,21 @@ body {
     } 
 
     #experience{
+        display: inline-block;
+        width: 10em;
+        
         background-color: $accent-color;
-        p{color: $text-icons;} 
-
+        
+        p{
+            margin: 0em;
+            color: $text-icons;
+        }
+        
         &.linking{
             background-color: red;
         }
+   
     }
-
     &.collapsed{
         animation: title-collapse-sm $collapse-time 0s 1 cubic-bezier(1,.015,.295,1.225) normal forwards;
         #portrait{
