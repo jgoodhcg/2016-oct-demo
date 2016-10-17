@@ -13,7 +13,7 @@ export default class Experience extends React.Component {
         return (
             <div id="experience" class="container">
                 <div class="row">
-                    <div id="exp-skills" class="card card-1 col-9">
+                    <div id="exp-skills" class="card card-1 col-12">
                         <h2>preferred skills</h2>
                         <h3>languages</h3>
                         <p>javascript, clojure(script), bash, sass, sql</p>
@@ -22,10 +22,29 @@ export default class Experience extends React.Component {
                         <h3>platforms/tools</h3>
                         <p>node, lein, webpack, docker, vagrant, git, nginx, postgres</p>
                     </div>
-                    <div class="card card-1 col-3">
-                        javascript
+                </div>
+                <div class="row">
+                    <div class="card card-1 col-5">
+                        <h2>Skill Ratings</h2>
+                        <p>0 - don't know it at all, 5 - master</p>
+                        <code> javascript, php </code>
                         <Skill score="4"></Skill>
-                        clojure(script), bash, sass, sql
+                        <code> sass, sql </code>
+                        <Skill score="3"></Skill>
+                        <code> clojure(script), bash, python </code>
+                        <Skill score="2"></Skill>
+                        <hr/>
+                        <code>d3</code>
+                        <Skill score="4"></Skill>
+                        <code>react, reagent, reframe, luminus</code>
+                        <Skill score="3"></Skill>
+                        <hr/>
+                        <code>git, svg</code>
+                        <Skill score="4"></Skill>
+                        <code>lein, webpack, vagrant, postgres</code>
+                        <Skill score="3"></Skill>
+                        <code>node, docker, nginx, apache</code>
+                        <Skill score="2"></Skill>
                     </div>
                 </div>
                 <div class="row">
