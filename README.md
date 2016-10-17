@@ -11,8 +11,9 @@
     - [x] ellispis text over flow
     - [x] refactor collapse to use react render class
     - [ ] bio
-    - [ ] experience
-      - [ ] back button
+    - [x] experience
+      - [x] skill ratings 
+      - [x] back button
       - [x] skills that I want to use
        - [x] javascript, clojure, bash, sass, sql (languages)
        - [x] react, reagent, reframe, d3, snap, luminus (frameworks/libraries)
@@ -34,11 +35,12 @@
         - [x] GRCC general education and film & video 2010 - 2011
   - [ ] activity card
     - [ ] clicky color thing
-      - [ ] modularize it to take up containing div
-        - [ ] modular and in single div
-        - [ ] seperate route
+      - [x] modularize it to take up containing div
+        - [x] modular and in single div
+        - [x] seperate route
         - [ ] info + back button
     - [ ] cut out icons
+      - [ ] clicky color thing
       - [ ] time sheet visualizations (coming soon)
       - [ ] myfitness pall visualizations (coming soon)
       - [ ] workout visualizations (coming soon)
@@ -62,3 +64,4 @@
       - [ ] repo link
   - [ ] express server with server side routing
   - [ ] Link button only clicks text
+  - [ ] global footer instead of just on index page
