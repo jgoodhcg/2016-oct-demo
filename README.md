@@ -61,3 +61,4 @@
       - [ ] react
       - [ ] repo link
   - [ ] express server with server side routing
+  - [ ] Link button only clicks text

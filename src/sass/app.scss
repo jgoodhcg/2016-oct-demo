@@ -296,7 +296,6 @@ body {
     padding-top: 3.5em;
 
     .card{
-        display: block;
         padding: 0.7em;
 
         text-align: left;
@@ -354,6 +353,7 @@ body {
     text-align: center !important;
     
     a{
+        width: 100%;
         color: $text-icons;
         text-decoration: none;
     }
