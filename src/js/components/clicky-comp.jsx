@@ -49,6 +49,13 @@ export default class Index extends React.Component {
         this.state.bannerModule.addRipple(x,y,d);
     }
 
+    componentWillUnmount(){
+        this.setState(
+            Object.assign(
+                this.state,
+                {bannerModule: null}));
+    }
+
     render() {
         return (
             <div id="clicky-container">

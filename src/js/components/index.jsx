@@ -1,6 +1,6 @@
 import React from "react";
 import InlineSVG from 'svg-inline-react';
-import { IndexLink, Link, browserHistory } from "react-router";
+import { IndexLink, Link, browserHistory, hashHistory } from "react-router";
 
 import Activities from "./activities.jsx";
 
@@ -19,7 +19,7 @@ export default class Index extends React.Component {
     }
 
     linkExperience(){
-        browserHistory.push('/experience');
+        hashHistory.push('/experience');
     }
 
     render() {
@@ -36,9 +36,8 @@ export default class Index extends React.Component {
                             </p>
                         </div>
                         <div id="experience-btn"
-                             class="card-1 card-1-hover"
-                             onClick={this.linkExperience.bind(this)}>
-                            <p>experience</p>
+                             class="card-1 card-1-hover link-btn">
+                            <Link to="/experience">experience</Link>
                         </div>
                         <div id="title-collapse-btn"
                              class={"collapse-btn-container " + (this.state.collapsed ? "collapsed" : "")}>

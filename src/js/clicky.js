@@ -194,14 +194,15 @@ window.bannerModule = (function() {
   }
 
   var banner = document.getElementById('banner'),
-  width = banner.offsetWidth,
-  height = banner.offsetHeight,
-  renderer = PIXI.autoDetectRenderer(width, height, {antialias: false}),
-  stage = new PIXI.Container(),
-  contAnim = true,
-  interaction = new PIXI.interaction.InteractionManager(renderer,
-     {autoPreventDefault: false});
-  banner.appendChild(renderer.view);
+      width = banner.offsetWidth,
+  // height = banner.offsetHeight,
+      height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
+      renderer = PIXI.autoDetectRenderer(width, height, {antialias: false}),
+      stage = new PIXI.Container(),
+      contAnim = true,
+      interaction = new PIXI.interaction.InteractionManager(renderer,
+                                                            {autoPreventDefault: false});
+    banner.appendChild(renderer.view);
 
   stage.interactive = true;
 

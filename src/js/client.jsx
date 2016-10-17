@@ -2,7 +2,7 @@ require("./../sass/app.scss");
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute, browserHistory } from "react-router";
+import { Router, Route, IndexRoute, browserHistory, hashHistory } from "react-router";
 
 import Layout from "./components/layout.jsx";
 import Index from "./components/index.jsx";
@@ -21,7 +21,7 @@ document.body.appendChild(app_element);
 const app = document.getElementById("app");
 
 ReactDOM.render(
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
         <Route path="/" component={Layout}>
             <IndexRoute component={Index}></IndexRoute>
             <Route path="experience" name="experience" component={Experience}></Route>

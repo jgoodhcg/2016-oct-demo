@@ -1,6 +1,6 @@
 import React from "react";
 import InlineSVG from 'svg-inline-react';
-import { IndexLink, Link, browserHistory } from "react-router";
+import { IndexLink, Link, browserHistory, hashHistory } from "react-router";
 
 export default class Activities extends React.Component {
     constructor() {

@@ -1,4 +1,6 @@
 ###todo 
+
+####initial launch
 - [ ] finish website
   - [ ] favicon
   - [ ] color scheme
@@ -9,7 +11,8 @@
     - [x] ellispis text over flow
     - [x] refactor collapse to use react render class
     - [ ] bio
-    - [x] experience button
+    - [ ] experience
+      - [ ] back button
       - [x] skills that I want to use
        - [x] javascript, clojure, bash, sass, sql (languages)
        - [x] react, reagent, reframe, d3, snap, luminus (frameworks/libraries)
@@ -42,7 +45,7 @@
       - [ ] federal government api interaction (coming soon)
       - [ ] blog (comming soon)
 
-Do Later
+####do Later
 - [ ] delayed link(react route) with pre-animation
 - [ ] local storage last visit for default collapse
 
@@ -57,4 +60,4 @@ Do Later
         - [ ] html
       - [ ] react
       - [ ] repo link
-
+  - [ ] express server with server side routing
