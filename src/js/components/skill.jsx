@@ -13,8 +13,8 @@ export default class Skill extends React.Component {
             pad = 4,
             stroke = 2;
         rects = rects.map((cv, i, rects) => {
-            return (<rect class={(i > +this.props.score ? "empty" : "filled")}
-                     x={2+(i*width)+pad} y="4"
+            return (<rect class={(i >= +this.props.score ? "empty" : "filled")}
+                     x={2+(i*width)} y="4"
                      width={width} height="6"
                      stroke-width={stroke}
                      rx="2" ry="2"/>);
