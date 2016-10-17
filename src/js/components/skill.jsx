@@ -9,17 +9,19 @@ export default class Skill extends React.Component {
 
     render() {
         let rects = [1,2,3,4,5],
-            width = 14,
+            width = 15,
             pad = 4,
-            stroke = 2;
+            stroke = 0.5;
         rects = rects.map((cv, i, rects) => {
             return (<rect class={(i >= +this.props.score ? "empty" : "filled")}
-                     x={2+(i*width)} y="4"
+                     key={i}
+                     x={ Math.max(i*(2+((i === 0 ? 0 : 1)*width)+((i === 0 ? 0 : 1)*pad)), 2) } y="4"
                      width={width} height="6"
-                     stroke-width={stroke}
+                     strokeWidth={stroke}
                      rx="2" ry="2"/>);
+            // x calculation is complicated, sorry
+            // TODO simplify x calc
         });
-        console.log(rects);
         return(
             <svg class="skill" width="100%" height="100%" viewBox="0 0 100 16">
                 {rects}
