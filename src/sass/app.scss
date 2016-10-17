@@ -313,6 +313,15 @@ body {
             color: $primary-text;
         }
     }
+
+    svg.skill{
+        rect.filled{
+            fill: $accent-color;
+        }
+        rect.empty{
+            fill: $text-icons;
+        }
+    }
 }
 
 #activities-container{
