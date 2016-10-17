@@ -22,9 +22,9 @@ export default class Experience extends React.Component {
                         <h3>platforms/tools</h3>
                         <p>node, lein, webpack, docker, vagrant, git, nginx, postgres</p>
                     </div>
-                    <div class="card card-1 col-2">
+                    <div class="card card-1 col-3">
                         javascript
-                        <Skill width="20"></Skill>
+                        <Skill score="4"></Skill>
                         clojure(script), bash, sass, sql
                     </div>
                 </div>

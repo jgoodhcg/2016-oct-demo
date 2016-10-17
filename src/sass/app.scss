@@ -315,11 +315,14 @@ body {
     }
 
     svg.skill{
-        rect.filled{
-            fill: $accent-color;
-        }
-        rect.empty{
-            fill: $text-icons;
+        rect{
+            stroke: $accent-color;
+            &.filled{
+                fill: $accent-color;
+            }
+            &.empty{
+                fill: $text-icons;
+            }
         }
     }
 }
