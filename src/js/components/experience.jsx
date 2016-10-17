@@ -67,7 +67,7 @@ export default class Experience extends React.Component {
                         <p>frameworks/libraries</p>
                         <code>d3</code>
                         <Skill score="4"></Skill>
-                        <code>react, reagent, reframe, luminus</code>
+                        <code>react, reagent, reframe, luminus, pixi</code>
                         <Skill score="3"></Skill>
                         <hr/>
                         <p>platforms/tools</p>
@@ -75,7 +75,7 @@ export default class Experience extends React.Component {
                         <Skill score="4"></Skill>
                         <code>lein, webpack, vagrant, postgres</code>
                         <Skill score="3"></Skill>
-                        <code>node, docker, nginx, apache</code>
+                        <code>node, docker, nginx, apache, canvas, webgl</code>
                         <Skill score="2"></Skill>
                     </div>
                     </div>
