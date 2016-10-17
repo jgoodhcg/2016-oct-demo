@@ -28,16 +28,20 @@ $light-primary: #cfd8dc;
 $accent-color: #03A9F4;
 
 html {
-  box-sizing: border-box;
+    height: 100%;
+
+    box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  background: #e2e1e0;
+    height: 100%;
 
-  text-align: center;
+    background: #e2e1e0;
+    
+    text-align: center;
 }
 
 .card {
@@ -344,6 +348,5 @@ body {
     #banner{
         width: 100%;
         height: 99em;
-        background-color: green;
     }
 }
