@@ -26,7 +26,7 @@ export default class Index extends React.Component {
         return (
             <div>
                 <div id="title-container" >
-                    <div id="title" class={"card card-1 container " + (this.state.collapsed ? "collapsed" : "expanded")}>
+                    <div id="title" class={"card card-1 " + (this.state.collapsed ? "collapsed" : "expanded")}>
                         <div id="portrait" >
                             <InlineSVG src={require("./../../resources/self-portrait.svg")}/>
                         </div>
@@ -40,7 +40,8 @@ export default class Index extends React.Component {
                              onClick={this.linkExperience.bind(this)}>
                             <p>experience</p>
                         </div>
-                        <div id="title-collapse-btn" class="collapse-btn-container">
+                        <div id="title-collapse-btn"
+                             class={"collapse-btn-container " + (this.state.collapsed ? "collapsed" : "")}>
                             <div class="collapse-btn" onClick={this.collapseClick.bind(this)}>
                                 <InlineSVG src={require("./../../resources/collapse.svg")}/>
                             </div>

@@ -9,7 +9,7 @@ export default class Activities extends React.Component {
 
     render(){
         return (
-            <div id="activities" class="card card-1 col-12-sm" >
+            <div id="activities" class="card card-1" >
                 <div class="row">
                     <div class="card card-1 col-6-sm col-4 game">
                         <Link to="/clicky" >Clicky</Link>
