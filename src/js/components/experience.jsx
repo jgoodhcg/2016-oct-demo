@@ -54,14 +54,15 @@ export default class Experience extends React.Component {
                     <div class="col-4">
                     <div class="card card-1">
                         <h2>Skill Ratings</h2>
-                        <p>0 - don't know it at all,<br/> 5 - master</p>
+                        <p>(relative)</p>
+                        <p>0 - don't know it at all,<br/> 5 - my strongest skills</p>
                         <hr/>
                         <p>languages</p>
                         <code> javascript, php </code>
-                        <Skill score="4"></Skill>
-                        <code> sass, sql </code>
+                        <Skill score="5"></Skill>
+                        <code> sass, clojure(script) </code>
                         <Skill score="3"></Skill>
-                        <code> clojure(script), bash, python </code>
+                        <code> sql, bash, python </code>
                         <Skill score="2"></Skill>
                         <hr/>
                         <p>frameworks/libraries</p>
@@ -71,12 +72,14 @@ export default class Experience extends React.Component {
                         <Skill score="3"></Skill>
                         <hr/>
                         <p>platforms/tools</p>
-                        <code>git, svg</code>
-                        <Skill score="4"></Skill>
-                        <code>lein, webpack, vagrant, postgres</code>
+                        <code>vagrant, svg</code>
+                        <Skill score="5"></Skill>
+                        <code>lein, webpack, postgres, git</code>
                         <Skill score="3"></Skill>
-                        <code>node, docker, nginx, apache, canvas, webgl</code>
+                        <code>node, docker, canvas, webgl</code>
                         <Skill score="2"></Skill>
+                        <code>nginx, apache,</code>
+                        <Skill score="1"></Skill>
                     </div>
                     </div>
                 </div>

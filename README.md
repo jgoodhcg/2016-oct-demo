@@ -34,6 +34,7 @@
         - [x] KCC general education and illustration 2011
         - [x] GRCC general education and film & video 2010 - 2011
   - [ ] activity card
+    - [ ] all cards should be focus-able w/ transition expansions (col-4 -> col-12)
     - [ ] clicky color thing
       - [x] modularize it to take up containing div
         - [x] modular and in single div
@@ -50,7 +51,7 @@
 ####do Later
 - [ ] delayed link(react route) with pre-animation
 - [ ] local storage last visit for default collapse
-
+- [ ] resources volume
     - [ ] blog
       - [ ] setting up this site
       - [ ] docker

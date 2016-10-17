@@ -379,7 +379,10 @@ body {
     }
 }
 
-code{font-family: monospace;}
+code{
+    color: $primary-text;
+    font-family: monospace;
+}
 
 #footer{
     position: absolute;
