@@ -40,7 +40,6 @@ export default class Layout extends React.Component {
                     </div>
                 </div>
 
-                {/* <div id="top-bar-spacer"></div> */}
                 {this.props.children}
 
             </div>

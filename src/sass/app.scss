@@ -380,3 +380,17 @@ body {
 }
 
 code{font-family: monospace;}
+
+#footer{
+    position: absolute;
+    @media screen and (max-width: $breakpoint-small){
+        position: relative; // idk why this is needed but it works TODO figure out why
+    }
+    bottom: 0;
+
+    height: 3.5em;
+    width: 100%;
+    margin-top: 3.5em;
+
+    background-color: $light-primary;
+}

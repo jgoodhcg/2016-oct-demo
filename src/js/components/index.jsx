@@ -50,6 +50,9 @@ export default class Index extends React.Component {
                 <div id="activities-container">
                     <Activities/>
                 </div>
+                <div id="footer">
+                    <p>Relevant as of Oct 2016</p>
+                </div>
             </div>
         );
     }
