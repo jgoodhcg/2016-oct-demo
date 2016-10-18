@@ -56,6 +56,7 @@
 - [ ] resources volume
 - [ ] express server with server side routing
 - [ ] Link button only clicks text
+  - [ ] move card div inside Link component
 - [ ] global footer instead of just on index page
 - [ ] blog
   - [ ] inline svg (viewport relativity)
@@ -64,3 +65,4 @@
   - [ ] css animations vs transitions vs fuck it
   - [ ] porting old code and when to refactor
 - [ ] proper readme to launch
+- [ ] make back buttons relative not absolute to "/"

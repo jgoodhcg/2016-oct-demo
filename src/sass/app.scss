@@ -347,7 +347,9 @@ body {
     max-width: 94%;
 
     .row{
-        .card{margin: 0.2em; height: 10em; width: 16.8em;}
+        .card{margin: 0.2em;
+              a{text-decoration: none;
+                p{margin: 0;}}}
         .game{background-color: $primary-game;}       
         .software{background-color: $primary-software;}       
         .data{background-color: $primary-data;}       
