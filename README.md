@@ -4,12 +4,12 @@
 - [ ] finish website
   - [x] favicon
   - [x] color scheme
-  - [ ] top bar
+  - [x] top bar
     - [x] icons link
-    - [ ] copy email
+    - [x] copy email
     - [x] icons
     - [x] fix expansion animation
-  - [ ] title card
+  - [x] title card
     - [x] ellispis text over flow
     - [x] refactor collapse to use react render class
     - [x] bio
@@ -37,11 +37,11 @@
         - [x] GRCC general education and film & video 2010 - 2011
   - [ ] activity card
     - [ ] all cards should be focus-able w/ transition expansions (col-4 -> col-12)
-    - [ ] clicky color thing
+    - [x] clicky color thing
       - [x] modularize it to take up containing div
         - [x] modular and in single div
         - [x] seperate route
-        - [ ] info + back button
+        - [x] info + back button
     - [ ] cut out icons
       - [ ] clicky color thing
       - [ ] time sheet visualizations (coming soon)

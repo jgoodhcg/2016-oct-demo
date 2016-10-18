@@ -1,6 +1,6 @@
 import React from "react";
 import InlineSVG from 'svg-inline-react';
-import { IndexLink, Link, browserHistory } from "react-router";
+import { IndexLink, Link, browserHistory, hashHistory } from "react-router";
 
 require( "./../clicky.js");
 
@@ -60,7 +60,17 @@ export default class Index extends React.Component {
         return (
             <div id="clicky-container">
                 <div id="banner"></div>
-                <div id="clicky-controls"></div>
+                <div id="clicky-controls" class="card card-3">
+                    <p>
+                        click anywhere to create a ring <br />
+                        hold for faster rings <br />
+                        built with pixi.js
+                    </p>
+                    <div 
+                         class="card card-1 card-1-hover link-btn col-2">
+                        <Link to="/">back</Link>
+                    </div>
+                </div>
             </div>
         );
     }
