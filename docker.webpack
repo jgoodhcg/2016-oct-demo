@@ -12,4 +12,4 @@ RUN npm install webpack -g
 
 WORKDIR src
 RUN npm install
-CMD npm install && webpack --watch --watch-polling
+CMD npm install && cp /app/src/resources/favicon.ico /wwwroot/favicon.ico && webpack --watch --watch-polling

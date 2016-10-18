@@ -15,7 +15,10 @@
    width="1000"
    height="1000"
    viewBox="0 0 1000 1000"
-   sodipodi:docname="justin.svg">
+   sodipodi:docname="justin.svg"
+   inkscape:export-filename="/home/justin/projects/2016-oct-demo/src/resources/favicon.ico"
+   inkscape:export-xdpi="2.8800001"
+   inkscape:export-ydpi="2.8800001">
   <metadata
      id="metadata4308">
     <rdf:RDF>
@@ -44,8 +47,8 @@
      id="namedview4304"
      showgrid="false"
      inkscape:zoom="0.77667441"
-     inkscape:cx="105.42332"
-     inkscape:cy="523.00556"
+     inkscape:cx="325.5928"
+     inkscape:cy="420.0023"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
