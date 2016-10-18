@@ -207,9 +207,9 @@ body {
     position: relative;
 
     display: block;
-    max-width: 70em;
-    @media screen and (max-width: $breakpoint-small){
-        max-width: 94%;
+    max-width: 94%;
+    @media screen and (min-width: $breakpoint-large){
+        max-width: 50em;
     }
     margin-left: auto;
     margin-right: auto;
@@ -382,18 +382,4 @@ body {
 code{
     color: $primary-text;
     font-family: monospace;
-}
-
-#footer{
-    position: absolute;
-    @media screen and (max-width: $breakpoint-small){
-        position: relative; // idk why this is needed but it works TODO figure out why
-    }
-    bottom: 0;
-
-    height: 3.5em;
-    width: 100%;
-    margin-top: 3.5em;
-
-    background-color: $light-primary;
 }

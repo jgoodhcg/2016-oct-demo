@@ -24,7 +24,7 @@ export default class Index extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="index-container">
                 <div id="title-container" >
                     <div id="title" class={"card card-1 " + (this.state.collapsed ? "collapsed" : "expanded")}>
                         <div id="portrait" >
@@ -49,9 +49,6 @@ export default class Index extends React.Component {
                 </div>
                 <div id="activities-container">
                     <Activities/>
-                </div>
-                <div id="footer">
-                    <p>Relevant as of Oct 2016</p>
                 </div>
             </div>
         );
