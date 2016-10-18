@@ -35,6 +35,12 @@
         - [x] GRCC general education and film & video 2010 - 2011
   - [ ] activity card
     - [ ] all cards should be focus-able w/ transition expansions (col-4 -> col-12)
+    - [ ] blog
+      - [ ] inline svg (viewport relativity)
+      - [ ] webpacking no images yet
+      - [ ] docker volumes
+      - [ ] css animations vs transitions vs fuck it
+      - [ ] porting old code and when to refactor
     - [ ] clicky color thing
       - [x] modularize it to take up containing div
         - [x] modular and in single div

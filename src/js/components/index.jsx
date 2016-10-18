@@ -28,11 +28,11 @@ export default class Index extends React.Component {
                 <div id="title-container" >
                     <div id="title" class={"card card-1 " + (this.state.collapsed ? "collapsed" : "expanded")}>
                         <div id="portrait" >
-                            <InlineSVG src={require("./../../resources/self-portrait.svg")}/>
+                            <InlineSVG src={require("./../../resources/justin.svg")}/>
                         </div>
                         <div id="info" >
                             <p id="bio" >
-                                this is where I would put a bio IF I HAD ONE! But really this should be a couple of lines long maybe even explaining this project and my life goals. More importantly there needs to be a clicky button because if you can't click it nobody will read it and they probably still won't read it if they can click it.
+                                My name is Justin and I like to make things. This site is one of those things. As of now this site is an experiment with React, Webpack, and SVG. It is a SPA with no back end, every asset is compiled with webpack, and all images are svg. Below is a link to my 'resume'. Below that is a catalog of some of my projects.
                             </p>
                         </div>
                         <div id="experience-btn"
