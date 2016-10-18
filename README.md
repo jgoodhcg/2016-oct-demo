@@ -2,10 +2,11 @@
 
 ####initial launch
 - [ ] finish website
-  - [ ] favicon
+  - [x] favicon
   - [x] color scheme
   - [ ] top bar
-    - [ ] icons link / copy email
+    - [x] icons link
+    - [ ] copy email
     - [x] icons
     - [x] fix expansion animation
   - [ ] title card
