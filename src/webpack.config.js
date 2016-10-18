@@ -36,7 +36,7 @@ module.exports = {
         path: "/wwwroot",
         filename: "client.min.js"
     },
-    plugins: debug ? [new HtmlWebpackPlugin()] : [
+    plugins: debug ? [new HtmlWebpackPlugin({title: "Justin's Demo Page"})] : [
         new HtmlWebpackPlugin({title: "Justin's Demo Page"}),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin(),
