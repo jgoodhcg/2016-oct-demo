@@ -43,8 +43,8 @@
         - [x] seperate route
         - [x] info + back button
     - [ ] cut out icons
-      - [ ] clicky color thing
-      - [ ] time sheet visualizations (coming soon)
+      - [x] clicky color thing
+      - [x] time sheet visualizations (coming soon)
       - [ ] myfitness pall visualizations (coming soon)
       - [ ] workout visualizations (coming soon)
       - [ ] federal government api interaction (coming soon)
