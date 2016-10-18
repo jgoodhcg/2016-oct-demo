@@ -3,14 +3,15 @@
 ####initial launch
 - [ ] finish website
   - [ ] favicon
-  - [ ] color scheme
+  - [x] color scheme
   - [ ] top bar
-    - [ ] icons
+    - [ ] icons link / copy email
+    - [x] icons
     - [x] fix expansion animation
   - [ ] title card
     - [x] ellispis text over flow
     - [x] refactor collapse to use react render class
-    - [ ] bio
+    - [x] bio
     - [x] experience
       - [x] skill ratings 
       - [x] back button
@@ -35,12 +36,6 @@
         - [x] GRCC general education and film & video 2010 - 2011
   - [ ] activity card
     - [ ] all cards should be focus-able w/ transition expansions (col-4 -> col-12)
-    - [ ] blog
-      - [ ] inline svg (viewport relativity)
-      - [ ] webpacking no images yet
-      - [ ] docker volumes
-      - [ ] css animations vs transitions vs fuck it
-      - [ ] porting old code and when to refactor
     - [ ] clicky color thing
       - [x] modularize it to take up containing div
         - [x] modular and in single div
@@ -58,17 +53,13 @@
 - [ ] delayed link(react route) with pre-animation
 - [ ] local storage last visit for default collapse
 - [ ] resources volume
-    - [ ] blog
-      - [ ] setting up this site
-      - [ ] docker
-        - [ ] link to webpack docker setup
-        - [ ] modifications to tut
-      - [ ] webpack
-        - [ ] jsx
-        - [ ] css
-        - [ ] html
-      - [ ] react
-      - [ ] repo link
-  - [ ] express server with server side routing
-  - [ ] Link button only clicks text
-  - [ ] global footer instead of just on index page
+- [ ] express server with server side routing
+- [ ] Link button only clicks text
+- [ ] global footer instead of just on index page
+- [ ] blog
+  - [ ] inline svg (viewport relativity)
+  - [ ] webpacking no images yet
+  - [ ] docker volumes
+  - [ ] css animations vs transitions vs fuck it
+  - [ ] porting old code and when to refactor
+- [ ] proper readme to launch
