@@ -48,6 +48,9 @@
       - [x] workout visualizations (coming soon)
       - [x] federal government api interaction (coming soon)
 
+####before 1st deploy
+- [ ] change title
+
 ####do Later
 - [ ] delayed link(react route) with pre-animation
 - [ ] local storage last visit for default collapse
