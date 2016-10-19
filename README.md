@@ -36,7 +36,6 @@
         - [x] KCC general education and illustration 2011
         - [x] GRCC general education and film & video 2010 - 2011
   - [ ] activity card
-    - [ ] all cards should be focus-able w/ transition expansions (col-4 -> col-12)
     - [x] clicky color thing
       - [x] modularize it to take up containing div
         - [x] modular and in single div
@@ -66,3 +65,4 @@
   - [ ] porting old code and when to refactor
 - [ ] proper readme to launch
 - [ ] make back buttons relative not absolute to "/"
+- [ ] all activity cards should be focus-able w/ transition expansions (col-4 -> col-12)

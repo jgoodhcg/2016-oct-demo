@@ -24,7 +24,13 @@ export default class Activities extends React.Component {
                             <p>timesheets</p>
                         </Link>
                     </div>
-                    <div class="card card-1 col-6-sm col-4 data soon">content</div>
+                    <div class="card card-1 col-6-sm col-4 data ">
+                        <span class="soon">coming soon</span>
+                        <Link to="/" >
+                            <InlineSVG src={require("./../../resources/calories.svg")}/>
+                            <p>myfitnesspal visualizations</p>
+                        </Link>
+                    </div>
                     <div class="card card-1 col-6-sm col-4 data soon">content</div>
                     <div class="card card-1 col-6-sm col-4 software soon">content</div>
                     <div class="card card-1 col-6-sm col-4 software soon">content</div>
