@@ -41,13 +41,12 @@
         - [x] modular and in single div
         - [x] seperate route
         - [x] info + back button
-    - [ ] cut out icons
+    - [x] cut out icons
       - [x] clicky color thing
       - [x] time sheet visualizations (coming soon)
       - [x] myfitness pall visualizations (coming soon)
       - [x] workout visualizations (coming soon)
-      - [ ] federal government api interaction (coming soon)
-      - [ ] blog (comming soon)
+      - [x] federal government api interaction (coming soon)
 
 ####do Later
 - [ ] delayed link(react route) with pre-animation

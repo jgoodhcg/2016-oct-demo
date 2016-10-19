@@ -369,7 +369,9 @@ body {
             }
             a{
                 text-decoration: none;
-                p{margin: 0;}
+                p{
+                    color: $text-icons;
+                    margin: 0;}
             }
         }
         .game{background-color: $primary-game;}       

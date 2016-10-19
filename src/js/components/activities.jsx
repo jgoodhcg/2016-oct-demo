@@ -45,6 +45,13 @@ export default class Activities extends React.Component {
                             <p>fed api</p>
                         </Link>
                     </div>
+                    <div class="card card-1 col-6-sm col-4 software ">
+                        <span class="soon">coming soon</span>
+                        <Link to="/" >
+                            <InlineSVG src={require("./../../resources/timetracking.svg")}/>
+                            <p>timetracker app</p>
+                        </Link>
+                    </div>
                 </div>
             </div>
         );
