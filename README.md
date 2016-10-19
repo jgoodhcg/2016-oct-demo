@@ -44,8 +44,8 @@
     - [ ] cut out icons
       - [x] clicky color thing
       - [x] time sheet visualizations (coming soon)
-      - [ ] myfitness pall visualizations (coming soon)
-      - [ ] workout visualizations (coming soon)
+      - [x] myfitness pall visualizations (coming soon)
+      - [x] workout visualizations (coming soon)
       - [ ] federal government api interaction (coming soon)
       - [ ] blog (comming soon)
 

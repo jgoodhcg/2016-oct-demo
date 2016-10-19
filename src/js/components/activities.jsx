@@ -28,13 +28,23 @@ export default class Activities extends React.Component {
                         <span class="soon">coming soon</span>
                         <Link to="/" >
                             <InlineSVG src={require("./../../resources/calories.svg")}/>
-                            <p>myfitnesspal visualizations</p>
+                            <p>calories</p>
                         </Link>
                     </div>
-                    <div class="card card-1 col-6-sm col-4 data soon">content</div>
-                    <div class="card card-1 col-6-sm col-4 software soon">content</div>
-                    <div class="card card-1 col-6-sm col-4 software soon">content</div>
-                    <div class="card card-1 col-6-sm col-4 software soon">content</div>
+                    <div class="card card-1 col-6-sm col-4 data ">
+                        <span class="soon">coming soon</span>
+                        <Link to="/" >
+                            <InlineSVG src={require("./../../resources/fitness.svg")}/>
+                            <p>fitness</p>
+                        </Link>
+                    </div>
+                    <div class="card card-1 col-6-sm col-4 data ">
+                        <span class="soon">coming soon</span>
+                        <Link to="/" >
+                            <InlineSVG src={require("./../../resources/government.svg")}/>
+                            <p>fed api</p>
+                        </Link>
+                    </div>
                 </div>
             </div>
         );
