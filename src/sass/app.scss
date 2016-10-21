@@ -376,6 +376,10 @@ body {
                     margin: 0;}
             }
         }
+        .activity{
+            transition: height 0.35s cubic-bezier(0.25,0.8,0.25,1);
+            transition: width 0.35s cubic-bezier(0.25,0.8,0.25,1);
+        }
         .game{background-color: $primary-game;}       
         .software{background-color: $primary-software;}       
         .data{background-color: $primary-data;}       

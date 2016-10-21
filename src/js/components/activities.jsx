@@ -12,7 +12,6 @@ export default class Activities extends React.Component {
     expansion(e){
         this.setState(Object.assign(
             this.state, {expanded: e.target.getAttribute("data-activity")}));
-        console.log(this.state);
     }
 
     render(){
@@ -25,7 +24,9 @@ export default class Activities extends React.Component {
                             <p>clicky thing</p>
                         </Link>
                     </div>
-                    <div id="timesheets" class="card card-1 col-6-sm col-3 data"
+                    <div id="timesheets"
+                         class={"card card-1 col-6-sm col-3 data activity " +
+                               (this.state.expanded === "timesheets" ? "expanded" : "")}
                         onClick={this.expansion.bind(this)}>
                         <span class="soon" data-activity="timesheets" >coming soon</span>
                         <Link to="/" >
@@ -33,7 +34,9 @@ export default class Activities extends React.Component {
                             <p>timesheets</p>
                         </Link>
                     </div>
-                    <div id="calories" class="card card-1 col-6-sm col-3 data "
+                    <div id="calories"
+                         class={"card card-1 col-6-sm col-3 data activity " +
+                               (this.state.expanded === "calories" ? "expanded" : "")}
                         onClick={this.expansion.bind(this)}>
                         <span class="soon" data-activity="calories" >coming soon</span>
                         <Link to="/" >
@@ -41,7 +44,9 @@ export default class Activities extends React.Component {
                             <p>calories</p>
                         </Link>
                     </div>
-                    <div id="fitness" class="card card-1 col-6-sm col-3 data "
+                    <div id="fitness"
+                         class={"card card-1 col-6-sm col-3 data activity " +
+                               (this.state.expanded === "fitness" ? "expanded" : "")}
                         onClick={this.expansion.bind(this)}>
                         <span class="soon" data-activity="fitness" >coming soon</span>
                         <Link to="/" >
@@ -49,7 +54,9 @@ export default class Activities extends React.Component {
                             <p>fitness</p>
                         </Link>
                     </div>
-                    <div id="fed" class="card card-1 col-6-sm col-3 data "
+                    <div id="fed"
+                         class={"card card-1 col-6-sm col-3 data activity " +
+                               (this.state.expanded === "fed" ? "expanded" : "")}
                         onClick={this.expansion.bind(this)}>
                         <span class="soon" data-activity="fed" >coming soon</span>
                         <Link to="/" >
@@ -57,12 +64,26 @@ export default class Activities extends React.Component {
                             <p>fed api</p>
                         </Link>
                     </div>
-                    <div id="timetracker" class="card card-1 col-6-sm col-3 software "
+                    <div id="timetracker"
+                         class={"card card-1 activity " +
+                                (this.state.expanded === "timetracker" ?
+                                 "expanded col-12"
+                              :
+                                 "data col-6-sm col-3")
+                               }
                         onClick={this.expansion.bind(this)}>
-                        <span class="soon" data-activity="timetracker" >coming soon</span>
                         <Link to="/" >
-                            <InlineSVG src={require("./../../resources/timetracking.svg")}/>
-                            <p>timetracker</p>
+                            {(this.state.expanded === "timetracker" ?
+                              <div>
+                                  <p>test of some stuff</p>
+                              </div>
+                             :
+                              <div>
+                                  <span class="soon" data-activity="timetracker" >coming soon</span>
+                                  <InlineSVG src={require("./../../resources/timetracking.svg")}/>
+                                  <p>timetracker</p>
+                              </div>
+                             )}
                         </Link>
                     </div>
                 </div>
