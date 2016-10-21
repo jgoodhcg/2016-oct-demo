@@ -56,6 +56,39 @@
 - [x] nix back buttons
 - [x] drop the `the`, just _facebook_
 
+####todo for mvp
+- [ ] move coming soon to desc page
+- [ ] progress bar component (very similar to skills comp)
+- [ ] page for each desc of each activity/project
+  - [ ] timesheets
+    - [ ] old time sheet screenshots
+    - [ ] example data
+    - [ ] sample d3 code
+    - [ ] sketch of new visual
+    - [ ] checklist
+      - [ ] parse data to postgres
+      - [ ] d3 visual
+  - [ ] calories
+    - [ ] export data sample
+    - [ ] checklist
+      - [ ] parse data to postgres
+      - [ ] determine all food groupings
+      - [ ] create icons for food groupings
+      - [ ] d3 chart with time range
+  - [ ] fitness
+    - [ ] sample data spreadsheet
+    - [ ] old bar graph
+    - [ ] checklist
+      - [ ] parse data to postgres
+  - [ ] fed
+    - [ ] play around with this api
+    - [ ] list reps given zip code
+  - [ ] timetracker
+    - [ ] elevator pitch
+    - [ ] stack
+    - [ ] mock ups
+        
+
 ####do Later
 - [ ] all activity cards should be focus-able w/ transition expansions (col-4 -> col-12)
 - [ ] refactor
