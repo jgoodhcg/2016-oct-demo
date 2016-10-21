@@ -32,7 +32,14 @@ export default class Index extends React.Component {
                         </div>
                         <div id="info" >
                             <p id="bio" >
-                                My name is Justin and I like to make things. This site is one of those things. As of now this site is an experiment with React, Webpack, and SVG. It is a SPA with no back end, every asset is compiled with webpack, and all images are hand-crafted artisanal inline svg. Below is a link to my 'resume'. Below that is a catalog of some of my projects.
+                                My name is Justin and I make things.
+                                This site is one of those things.
+                                As of now this site is an experiment that uses Docker, React, Webpack, and SVG.
+                                It is a SPA with no back end,
+                                every asset is compiled with webpack,
+                                all images are hand-crafted artisanal inline svg.
+                                Below is a link to my <span style={{fontStyle: "italic"}}> resume</span>.
+                                Below that is a catalog of some of my current projects.
                             </p>
                         </div>
                         <div id="experience-btn"

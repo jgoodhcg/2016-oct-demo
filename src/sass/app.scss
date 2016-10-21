@@ -121,6 +121,8 @@ body {
     #name{
         float: left;
 
+        cursor: pointer;
+
         div{
             margin: 0.25em;
             color: $text-icons;

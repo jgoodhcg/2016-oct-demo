@@ -29,11 +29,10 @@ export default class Experience extends React.Component {
                             <div id="exp-employment" class="card card-1 col-12">
                                 <h2>employment</h2>
                                 <h3>onestop feb 2016 – present</h3>
-                                <p>maintaining legacy e-commerce site and supporting applications</p>
-                                <p>developing greenfield e-commerce site and supporting applications</p>
+                                <p>maintaining/extending legacy e-commerce site and supporting applications</p>
                                 <p>php, python, javascript, bash, sql, css, sass</p>
                                 <p>zend, jquery</p>
-                                <p>apache, node, git, mercurial, vagrant, postgres</p>
+                                <p>apache, git, mercurial, vagrant, postgres</p>
 
                                 <h3>city of wyoming may 2015 – nov 2015</h3>
                                 <p>developed internal crud application for public works department</p>

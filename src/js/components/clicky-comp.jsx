@@ -66,10 +66,6 @@ export default class Index extends React.Component {
                         hold for faster rings <br />
                         built with pixi.js
                     </p>
-                    <div 
-                         class="card card-1 card-1-hover link-btn col-2">
-                        <Link to="/">back</Link>
-                    </div>
                 </div>
             </div>
         );

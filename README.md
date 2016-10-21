@@ -48,10 +48,23 @@
       - [x] workout visualizations (coming soon)
       - [x] federal government api interaction (coming soon)
 
-####before 1st deploy
-- [ ] change title
+####critiques to address
+- [x] change title
+- [x] ...an experiment ~with~~ **that uses** React, ...
+- [x] sizing on projects
+- [x] ~~link~~ buttton justin good to home
+- [x] nix back buttons
+- [x] drop the `the`, just _facebook_
+- [ ] all activity cards should be focus-able w/ transition expansions (col-4 -> col-12)
 
 ####do Later
+- [ ] refactor
+  - [ ] components into pages -> components
+  - [ ] css into seperate files for each component (?put component's css with compnent?)
+  - [ ] accesiblitity
+    - [ ] links are links
+    - [ ] alt text
+    - [ ] use a screen reader, see how it feels
 - [ ] delayed link(react route) with pre-animation
 - [ ] local storage last visit for default collapse
 - [ ] resources volume
@@ -67,4 +80,4 @@
   - [ ] porting old code and when to refactor
 - [ ] proper readme to launch
 - [ ] make back buttons relative not absolute to "/"
-- [ ] all activity cards should be focus-able w/ transition expansions (col-4 -> col-12)
+- [ ] add shadows to project catalog icons

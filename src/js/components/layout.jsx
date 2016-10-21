@@ -1,5 +1,6 @@
 import React from "react";
 import InlineSVG from 'svg-inline-react';
+import { IndexLink, Link, browserHistory, hashHistory } from "react-router";
 
 export default class Layout extends React.Component {
     constructor() {
@@ -73,12 +74,16 @@ export default class Layout extends React.Component {
         document.body.removeChild(gmailaddr);
     }
 
+    goHome(){
+       hashHistory.push("/");
+    }
+
    render() {
         return (
             <div id="app-container">
                 <div id="top-bar" class="card-2">
                     <div id="name">
-                        <div>Justin Good</div>
+                        <div id="name-text" onClick={this.goHome}>Justin Good</div>
                     </div>
                     <div id="links" class={this.state.collapsed ? "collapsed" : "expanded"}>
                         <div id="hamburger" onClick={this.hamburgerClick.bind(this)}>
