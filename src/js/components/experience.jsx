@@ -82,12 +82,6 @@ export default class Experience extends React.Component {
                     </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div id="home-btn"
-                         class="card card-1 card-1-hover link-btn col-2">
-                        <Link to="/">back</Link>
-                    </div>
-                </div>
             </div>
         );
     }

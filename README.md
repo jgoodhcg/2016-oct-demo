@@ -55,9 +55,9 @@
 - [x] ~~link~~ buttton justin good to home
 - [x] nix back buttons
 - [x] drop the `the`, just _facebook_
-- [ ] all activity cards should be focus-able w/ transition expansions (col-4 -> col-12)
 
 ####do Later
+- [ ] all activity cards should be focus-able w/ transition expansions (col-4 -> col-12)
 - [ ] refactor
   - [ ] components into pages -> components
   - [ ] css into seperate files for each component (?put component's css with compnent?)
