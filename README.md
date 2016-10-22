@@ -58,7 +58,7 @@
 
 ####todo for mvp
 - [ ] move coming soon to desc page
-- [ ] progress bar component (very similar to skills comp)
+  - [x] refactor activities to use activity component
 - [ ] page for each desc of each activity/project
   - [ ] timesheets
     - [ ] old time sheet screenshots
@@ -87,6 +87,7 @@
     - [ ] elevator pitch
     - [ ] stack
     - [ ] mock ups
+- [ ] progress bar component (very similar to skills comp)
         
 
 ####do Later

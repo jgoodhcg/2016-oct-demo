@@ -8,6 +8,7 @@ import Layout from "./components/layout.jsx";
 import Index from "./components/index.jsx";
 import Experience from "./components/experience.jsx";
 import Clicky from "./components/clicky-comp.jsx";
+import Timesheets from "./components/timesheets.jsx";
 
 var metaTag=document.createElement('meta');
 metaTag.name = "viewport";
@@ -26,6 +27,7 @@ ReactDOM.render(
             <IndexRoute component={Index}></IndexRoute>
             <Route path="experience" name="experience" component={Experience}></Route>
             <Route path="clicky" name="clicky" component={Clicky}></Route>
+            <Route path="timesheets" name="timesheets" component={Timesheets}></Route>
         </Route>
     </Router>, app);
 
