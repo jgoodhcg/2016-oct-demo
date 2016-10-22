@@ -9,7 +9,7 @@ export default class Activity extends React.Component {
 
     render(){
         return (
-            <div id={this.props.id} class={this.props.category + " card card-1 col-6-sm col-2"}>
+            <div id={this.props.id} class={this.props.classes}>
                 {(this.props.soon ?
                   <span class="soon" data-activity={this.props.id}>coming soon</span>
                  :

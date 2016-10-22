@@ -16,7 +16,7 @@ export default class Activities extends React.Component {
                 },
                 {
                     id: "timesheets", resource: "timesheets", name: "timesheets",
-                    category: "data", route: "/", soon: true,
+                    category: "data", route: "/timesheets", soon: false,
                 },
                 {
                     id: "calories", resource: "calories", name: "calories",
@@ -49,7 +49,8 @@ export default class Activities extends React.Component {
                 <div class="row">
                     {this.state.activities.map((activity, i, activities) => {
                          return (
-                             <Activity id={activity.id} category={activity.category}
+                             <Activity id={activity.id}
+                                       classes={activity.category +" activity card card-1 col-6-sm col-2"}
                                        key={i}
                                        soon={activity.soon}
                                        route={activity.route}

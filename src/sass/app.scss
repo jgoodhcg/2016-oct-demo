@@ -26,6 +26,9 @@ $primary-text: #212121;
 $secondary-text: #757575;
 $light-primary: #cfd8dc;
 $accent-color: #03A9F4;
+$primary-game: #FFC107;
+$primary-software: #607D8B;
+$primary-data: #009688;
 
 html {
     height: 100%;
@@ -341,47 +344,49 @@ body {
 
 #activities{
     // TODO remove colors
-    $primary-game: #FFC107;
-    $primary-software: #607D8B;
-    $primary-data: #009688;
-
     padding: 1em 0.25em 1em 0.25em;
     width: 94%;
 
     .row{
         .card{
-            position: relative;
-            margin: 0.2em;
-            .soon{
-                position: absolute;
-                top: 0em;
-                left: 0;
-                right: 0;
-
-                margin: auto;
-                height: 100%;
-                width: 100%;
-
-                color: white; 
-                font: bold 24px/45px Helvetica, Sans-Serif;
-                letter-spacing: -1px;
-                background: rgb(0, 0, 0); /* fallback color */
-                background: rgba(0, 0, 0, 0.5);
-                padding: 2em 1em 1em 1em; 
-            }
-            a{
-                text-decoration: none;
-                p{
-                    color: $text-icons;
-                    margin: 0;
-                }
-            }
-        }
-        .game{background-color: $primary-game;}       
-        .app{background-color: $primary-software;}
-        .data{background-color: $primary-data;}       
+       }
     } 
 }
+
+.activity{
+    position: relative;
+    margin: 0.2em;
+    a{
+        text-decoration: none;
+        text-align: center;
+        p{
+            color: $text-icons;
+            margin: 0;
+        }
+    }
+}
+.soon{
+    position: absolute;
+    top: 0em;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    height: 100%;
+    width: 100%;
+
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em 1em 1em 1em; 
+}
+
+.game{background-color: $primary-game;}       
+.app{background-color: $primary-software;}
+.data{background-color: $primary-data;}       
+
 
 #clicky-container{
     #banner{
@@ -437,5 +442,13 @@ code{
 #timesheets-container{
     padding-top: 3.5em;
 
+    text-align: left;
+
     img{width: 100%;}
 }
+
+.code{
+    background-color: #afafaf;
+    padding: 0.5em;
+    margin: 0.5em;
+    }
