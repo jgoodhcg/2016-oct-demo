@@ -373,11 +373,12 @@ body {
                 text-decoration: none;
                 p{
                     color: $text-icons;
-                    margin: 0;}
+                    margin: 0;
+                }
             }
         }
         .game{background-color: $primary-game;}       
-        .software{background-color: $primary-software;}       
+        .app{background-color: $primary-software;}
         .data{background-color: $primary-data;}       
     } 
 }
@@ -417,4 +418,18 @@ code{
 
     width: auto;
     padding: 0.5em;
+
+    span.exit{
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+
+        p{
+            color: $secondary-text;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+        }
+
+    }
 }

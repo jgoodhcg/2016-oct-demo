@@ -8,7 +8,10 @@ export default class Index extends React.Component {
     constructor() {
         super();
 
-        this.state = {bannerModule : null};
+        this.state = {
+            bannerModule: null,
+            controls: "open"
+        };
 
 }
     componentDidMount(){
@@ -56,17 +59,34 @@ export default class Index extends React.Component {
                 {bannerModule: null}));
     }
 
+    componentWillUnmount(){
+        window.onresize = null;
+    }
+
+    closeControls(){
+        this.setState(
+            Object.assign(
+                this.state,
+                {controls: "closed"}));
+    }
+
     render() {
         return (
             <div id="clicky-container">
                 <div id="banner"></div>
-                <div id="clicky-controls" class="card card-3">
-                    <p>
-                        click anywhere to create a ring <br />
-                        hold for faster rings <br />
-                        built with pixi.js
-                    </p>
-                </div>
+                {
+                    (this.state.controls === "open" ?
+                     <div id="clicky-controls" class="card card-3">
+                         <span class="exit" onClick={this.closeControls.bind(this)} ><p>X</p></span>
+                         <p>
+                             click anywhere to create a ring <br />
+                             hold for faster rings <br />
+                             built with pixi.js
+                         </p>
+                     </div>
+                    :
+                     <div></div>)
+                }
             </div>
         );
     }
