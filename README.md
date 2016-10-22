@@ -57,17 +57,13 @@
 - [x] drop the `the`, just _facebook_
 
 ####todo for mvp
-- [ ] move coming soon to desc page
+- [x] move coming soon to desc page
   - [x] refactor activities to use activity component
 - [ ] page for each desc of each activity/project
-  - [ ] timesheets
-    - [ ] old time sheet screenshots
-    - [ ] example data
-    - [ ] sample d3 code
-    - [ ] sketch of new visual
-    - [ ] checklist
-      - [ ] parse data to postgres
-      - [ ] d3 visual
+  - [x] timesheets
+    - [x] old time sheet screenshots
+    - [x] example data
+    - [x] sketch of new visual
   - [ ] calories
     - [ ] export data sample
     - [ ] checklist
@@ -87,10 +83,9 @@
     - [ ] elevator pitch
     - [ ] stack
     - [ ] mock ups
-- [ ] progress bar component (very similar to skills comp)
-        
 
 ####do Later
+- [ ] progress bar component (very similar to skills comp)
 - [ ] all activity cards should be focus-able w/ transition expansions (col-4 -> col-12)
 - [ ] refactor
   - [ ] components into pages -> components

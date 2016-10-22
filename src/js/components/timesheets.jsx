@@ -23,7 +23,7 @@ export default class Timesheets extends React.Component {
                                       name="timesheets">
                             </Activity>
                             <h2>old visualization</h2>
-                            <p>Below is a screenshot of an old d3 visualization of some timesheet data I did.</p>
+                            <p>Below is a screenshot of an old d3 visualization of some timesheet data.</p>
                             <img src="/imgs/timesheet-old.png"/>
                         </div>
                     </div>
@@ -44,8 +44,17 @@ export default class Timesheets extends React.Component {
                                 </code>
                             </div>
                                 <p>
-                                    The source code for this old visualization can be found <a href="https://github.com/jgoodhcg/2016-feb-demo/blob/master/resources/public/js/timesheet.js">here</a>
+                                    The source code for this old visualization is <a href="https://github.com/jgoodhcg/2016-feb-demo/blob/master/resources/public/js/timesheet.js">here</a>
                                 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-1 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>new visualization</h2>
+                            <p> Here is a potato from sketchbook showing some ideas for a new iteration of this visualization</p>
+                            <img src="/imgs/timesheet-sketch.jpg"/>
                         </div>
                     </div>
                 </div>
