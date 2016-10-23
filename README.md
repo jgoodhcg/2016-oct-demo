@@ -59,12 +59,19 @@
 ####todo for mvp
 - [x] move coming soon to desc page
   - [x] refactor activities to use activity component
-- [ ] page for each desc of each activity/project
+- [x] page for each desc of each activity/project
   - [x] timesheets
     - [x] old time sheet screenshots
     - [x] example data
     - [x] sketch of new visual
-  - [ ] calories
+    - [x] timetracker
+    - [x] stack
+    - [x] mock ups
+
+####do Later
+- [ ] progress bar component (very similar to skills comp)
+- [ ] all activity cards should be focus-able w/ transition expansions (col-4 -> col-12)
+- [ ] calories
     - [ ] export data sample
     - [ ] checklist
       - [ ] parse data to postgres
@@ -79,16 +86,10 @@
   - [ ] fed
     - [ ] play around with this api
     - [ ] list reps given zip code
-  - [ ] timetracker
-    - [ ] elevator pitch
-    - [ ] stack
-    - [ ] mock ups
 
-####do Later
-- [ ] progress bar component (very similar to skills comp)
-- [ ] all activity cards should be focus-able w/ transition expansions (col-4 -> col-12)
 - [ ] refactor
   - [ ] components into pages -> components
+    - [ ] fix padding on every page (from topbar)
   - [ ] css into seperate files for each component (?put component's css with compnent?)
   - [ ] accesiblitity
     - [ ] links are links

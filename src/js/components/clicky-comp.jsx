@@ -57,9 +57,6 @@ export default class Index extends React.Component {
             Object.assign(
                 this.state,
                 {bannerModule: null}));
-    }
-
-    componentWillUnmount(){
         window.onresize = null;
     }
 

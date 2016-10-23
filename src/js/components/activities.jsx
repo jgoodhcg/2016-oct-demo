@@ -32,7 +32,7 @@ export default class Activities extends React.Component {
                 },
                 {
                     id: "timetracker", resource: "timetracking", name: "timetracker",
-                    category: "app", route: "/", soon: true,
+                    category: "app", route: "/timetracker", soon: false,
                 },
             ]};
     }
