@@ -20,7 +20,7 @@ export default class Activities extends React.Component {
                 },
                 {
                     id: "calories", resource: "calories", name: "calories",
-                    category: "data", route: "/", soon: true,
+                    category: "data", route: "/calories", soon: false,
                 },
                 {
                     id: "fitness", resource: "fitness", name: "fitness",

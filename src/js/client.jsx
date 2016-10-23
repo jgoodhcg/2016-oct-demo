@@ -10,6 +10,7 @@ import Experience from "./components/experience.jsx";
 import Clicky from "./components/clicky-comp.jsx";
 import Timesheets from "./components/timesheets.jsx";
 import Timetracker from "./components/timetracker.jsx";
+import Calories from "./components/calories.jsx";
 
 var metaTag=document.createElement('meta');
 metaTag.name = "viewport";
@@ -30,6 +31,7 @@ ReactDOM.render(
             <Route path="clicky" name="clicky" component={Clicky}></Route>
             <Route path="timesheets" name="timesheets" component={Timesheets}></Route>
             <Route path="timetracker" name="timetracker" component={Timetracker}></Route>
+            <Route path="calories" name="calories" component={Calories}></Route>
         </Route>
     </Router>, app);
 
