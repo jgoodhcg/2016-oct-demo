@@ -19,7 +19,7 @@ export default class Calories extends React.Component {
                                       soon={true}
                                       route="/calories"
                                       resource="calories"
-                                      classes="app activity card card-1 col-6-sm col-4"
+                                      classes="data activity card card-1 col-6-sm col-4"
                                       name="calories">
                             </Activity>
                         </div>

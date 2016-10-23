@@ -19,7 +19,7 @@ export default class Fed extends React.Component {
                                       soon={true}
                                       route="/fed"
                                       resource="government"
-                                      classes="data activity card card-1 col-6-sm col-4"
+                                      classes="app activity card card-1 col-6-sm col-4"
                                       name="fed api">
                             </Activity>
                         </div>

@@ -19,7 +19,7 @@ export default class Fitness extends React.Component {
                                       soon={true}
                                       route="/fitness"
                                       resource="fitness"
-                                      classes="app activity card card-1 col-6-sm col-4"
+                                      classes="data activity card card-1 col-6-sm col-4"
                                       name="fitness">
                             </Activity>
                         </div>
