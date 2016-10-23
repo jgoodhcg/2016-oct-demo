@@ -75,7 +75,7 @@ export default class Experience extends React.Component {
                         <Skill score="5"></Skill>
                         <code>lein, webpack, postgres, git</code>
                         <Skill score="3"></Skill>
-                        <code>node, docker, canvas, webgl</code>
+                        <code>node, npm, docker, canvas, webgl</code>
                         <Skill score="2"></Skill>
                         <code>nginx, apache</code>
                         <Skill score="1"></Skill>
