@@ -42,10 +42,14 @@ export default class Index extends React.Component {
                                 Below that is a catalog of some of my current projects.
                             </p>
                         </div>
-                        <div id="experience-btn"
-                             class="card-1 card-1-hover link-btn">
-                            <Link to="/experience">experience</Link>
-                        </div>
+                        {(this.state.collapsed ?
+                          <div></div>
+                         :
+                          <div id="experience-btn"
+                               class="card-1 card-1-hover link-btn">
+                              <Link to="/experience">experience</Link>
+                          </div>
+                         )}
                         <div id="title-collapse-btn"
                              class={"collapse-btn-container " + (this.state.collapsed ? "collapsed" : "")}>
                             <div class="collapse-btn" onClick={this.collapseClick.bind(this)}>
