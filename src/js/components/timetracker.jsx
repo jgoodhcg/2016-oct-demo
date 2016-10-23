@@ -32,6 +32,7 @@ export default class TimeTracker extends React.Component {
                                 <a href="https://github.com/Day8/re-frame">reframe,</a><br/>
                                 <a href="http://reagent-project.github.io/">reagent,</a><br/>
                                 <a href="https://github.com/clojure/clojurescript">clojurescript,</a><br/>
+                                <a href="https://github.com/bhauman/lein-figwheel">figwheel,</a><br/>
                                 <a href="http://www.luminusweb.net/">luminus,</a><br/>
                                 <a href="http://clojure.org/">clojure,</a><br/>
                                 <a href="https://www.postgresql.org/">postgres,</a><br/>

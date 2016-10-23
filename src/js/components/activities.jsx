@@ -28,10 +28,10 @@ export default class Activities extends React.Component {
                 },
                 {
                     id: "fed", resource: "government", name: "fed api",
-                    category: "data", route: "/", soon: true,
+                    category: "data", route: "/fed", soon: false,
                 },
                 {
-                    id: "timetracker", resource: "timetracking", name: "timetracker",
+                    id: "timetracker", resource: "timetracking", name: "tracker",
                     category: "app", route: "/timetracker", soon: false,
                 },
             ]};

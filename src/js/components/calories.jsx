@@ -26,7 +26,17 @@ export default class Calories extends React.Component {
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <p>Content Here</p>
+                            <p>
+                                I've been keeping a strict <a href="https://www.myfitnesspal.com/">
+                                    myfitnesspal
+                                </a> log for (as of 2016/10/23) 257 days. When it reaches 365
+                                I'll <a href="http://quantifiedself.com/2015/01/access-export-myfitnesspal-data/">
+                                    export the data
+                                </a> and build some reports and visualizations.
+                            </p>
+                            <p>
+                                Some thoughts for visualizations include a stacked chart of servings of food groups with easily recognizable symbols, and calories per day over time.
+                            </p>
                        </div>
                     </div>
                </div>
