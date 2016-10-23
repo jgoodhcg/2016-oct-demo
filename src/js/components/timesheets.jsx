@@ -53,7 +53,7 @@ export default class Timesheets extends React.Component {
                     <div class="row">
                         <div class="col-12">
                             <h2>new visualization</h2>
-                            <p> Here is a potato from sketchbook showing some ideas for a new iteration of this visualization</p>
+                            <p> Here is a potato from my sketchbook showing some ideas for a new iteration of this visualization</p>
                             <img src="/imgs/timesheet-sketch.jpg"/>
                         </div>
                     </div>
